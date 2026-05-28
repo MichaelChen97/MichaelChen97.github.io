@@ -1,0 +1,27 @@
+.DS_Store
+Thumbs.db
+
+# Dependencies and package manager output
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Static/build output
+dist/
+build/
+.vite/
+.parcel-cache/
+
+# Editor and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.backup*
+
+# Local environment files
+.env
+.env.*
