@@ -1,14 +1,22 @@
 # Michael Chen Portfolio
 
-Personal portfolio and resume website for Michael Chen, a Software Engineering student based in Hamilton, New Zealand.
+Personal portfolio and resume website for **Michael Chen**, a Software Engineering student based in Hamilton, New Zealand.
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Website-blue?style=for-the-badge)](https://michaelchen97.github.io/)
+
+## Live Demo
+
+You can view the live website here:
+
+[**Open Portfolio Website**](https://michaelchen97.github.io/)
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 4
-- Font Awesome
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap 4
+* Font Awesome
 
 ## Project Structure
 
@@ -46,23 +54,15 @@ No build command is needed for this static site. GitHub Pages can publish the re
 
 1. Push this project to GitHub.
 2. Open the repository on GitHub.
-3. Go to `Settings` > `Pages`.
-4. Under `Build and deployment`, set `Source` to `Deploy from a branch`.
-5. Set `Branch` to `main` and folder to `/ (root)`.
+3. Go to **Settings > Pages**.
+4. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+5. Set **Branch** to `main` and folder to `/ (root)`.
 6. Save the settings.
 
-If the repository is named `michael16585.github.io`, the site will publish at:
+Because this repository is named `MichaelChen97.github.io`, the website is published at:
 
-```text
-https://michael16585.github.io/
-```
+https://michaelchen97.github.io/
 
-If the repository has another name, the site will publish at:
+## About
 
-```text
-https://michael16585.github.io/<repo-name>/
-```
-
-## Live Demo
-
-Live demo: `https://michael16585.github.io/<repo-name>/`
+This portfolio highlights my software projects, education, technical skills, certifications, and interests. It is designed as a personal resume website for internship and graduate software engineering opportunities.
