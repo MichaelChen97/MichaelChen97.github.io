@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CFIT Timetable System — Michael Chen</title>
+  <meta name="description" content="Case study: the CFIT Timetable System, a full-stack scheduling platform that replaced three cross-checked Excel workbooks with one validated, versioned timetable. Primary developer: Michael Chen.">
+  <meta name="theme-color" content="#07090c">
+  <link rel="canonical" href="https://michaelchen97.github.io/project-cfit.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Michael Chen — Software Engineer">
+  <meta property="og:title" content="CFIT Timetable System — case study">
+  <meta property="og:description" content="From three Excel workbooks to one validated, versioned timetable.">
+  <meta property="og:url" content="https://michaelchen97.github.io/project-cfit.html">
+  <meta property="og:image" content="https://michaelchen97.github.io/assets/og/og-project-cfit.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="CFIT Timetable System — Michael Chen: preview image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://michaelchen97.github.io/assets/og/og-project-cfit.jpg">
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ChakraPetch-SemiBold-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" as="image" href="assets/media/cfit/CF-L01_coordinated-fix_poster_960.webp" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23eef2f6'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' text-anchor='middle' fill='%2307090c'%3EMC%3C/text%3E%3C/svg%3E">
+</head>
+
+<body class="w-cfit">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">MC</span><span>Michael Chen</span><span class="sr-only">, home</span></a>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="./#work" data-nav="work" aria-current="true">Work</a>
+      <a href="./#toolbox" data-nav="toolbox">Toolbox</a>
+      <a href="./#about" data-nav="about">About</a>
+      <a href="./#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-sm header-cta" href="https://canva.link/l92zh4dfmt63nav" target="_blank" rel="noopener noreferrer">Résumé<span class="sr-only"> (opens in a new tab)</span></a>
+      <button class="btn btn-sm nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="case-hero w-cfit">
+    <div class="art w-cfit" aria-hidden="true"></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="./#cfit">Work</a><span aria-hidden="true">/</span><span>CFIT Timetable System</span></nav>
+      <div class="ch-grid">
+        <div class="ch-copy">
+          <p class="tag">Flagship · Wintec industry internship 2026</p>
+          <h1>From three spreadsheets to one checked timetable.</h1>
+          <p class="lede">CFIT Timetable is a full-stack scheduling platform for Wintec’s Centre for Information Technology. It imports a term’s Excel workbooks, flags scheduling conflicts, suggests fixes, and keeps every change as a Version you can restore.</p>
+          <p class="role"><b>My role</b><span>Primary developer · full-stack engineering</span></p>
+        </div>
+        <div class="ch-media">
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    
+    <video data-mode="loop" data-src="assets/media/cfit/CF-L01_coordinated-fix_h264_1920x1080p60.mp4" data-src-sm="assets/media/cfit/CF-L01_coordinated-fix_h264_1280x720p60.mp4" poster="assets/media/cfit/CF-L01_coordinated-fix_poster_960.webp" data-poster-lg="assets/media/cfit/CF-L01_coordinated-fix_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="CFIT Timetable: a coordinated fix is previewed on Thursday, then Apply saves it"></video>
+  </div>
+  <figcaption><span>Preview on Thursday, then Apply: a coordinated three-session fix is saved as Version 3.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+        </div>
+        <dl class="facts">
+        <div><dt>Context</dt><dd>Wintec industry internship, 2026, with the CFIT team as the client</dd></div>
+        <div><dt>Stack</dt><dd>React 19 · TypeScript · Spring Boot · PostgreSQL · Docker</dd></div>
+        <div><dt>Status</dt><dd>Feature freeze · October 2026</dd></div>
+      </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="glance" role="group" aria-label="At a glance">
+      <div><b>The problem</b><p>Each term lived in three Excel workbooks that had to be cross-checked by hand. A double-booked room could stay hidden until teaching started.</p></div>
+      <div><b>What I built</b><p>Most of a full-stack platform: React and TypeScript client, Spring Boot API, PostgreSQL schema, Excel import and export, and the tests that guard it.</p></div>
+      <div><b>The result</b><p>One validated, versioned timetable: every import checked, every fix previewed before it is saved, every change restorable.</p></div>
+    </div>
+  </div>
+  <div class="wrap case-layout">
+    <nav class="toc" aria-label="On this page">
+      <a href="#problem">The problem</a>
+      <a href="#contribution">What I built</a>
+      <a href="#workspace">The workspace</a>
+      <a href="#import">Import &amp; validation</a>
+      <a href="#conflicts">Clashes &amp; fixes</a>
+      <a href="#editing">Editing</a>
+      <a href="#history">Version history</a>
+      <a href="#outputs">PDF &amp; Excel</a>
+      <a href="#engineering">Engineering</a>
+      <a href="#results">Outcome</a>
+    </nav>
+    <div>
+      <section class="chapter" id="problem" aria-labelledby="h-problem">
+        <p class="kicker"><span class="n">01</span> The problem</p>
+        <h2 id="h-problem">Clashes hid in three workbooks.</h2>
+        <div class="prose">
+          <p>Every term began as three Excel workbooks: the rooms, the Modules and their Tutors, and the timetable itself. Keeping them in step meant checking rows against each other by hand, every change had to be made in several places, and a double-booked room could sit unnoticed until the first week of teaching.</p>
+          <p>The CFIT team needed one place that <strong>checks the data, shows it clearly and keeps a record of every change</strong>, without forcing them to give up Excel, which the rest of the institution still uses.</p>
+        </div>
+      </section>
+
+      <section class="chapter" id="contribution" aria-labelledby="h-contribution">
+        <p class="kicker"><span class="n">02</span> What I built</p>
+        <h2 id="h-contribution">Most of the code, across the whole stack.</h2>
+        <div class="prose">
+          <p>I led development across the React and TypeScript client, Spring Boot API, PostgreSQL schema, Excel import/export and automated tests, working with another contributor and the CFIT team as the client.</p>
+          <ul>
+            <li><strong>Import and validation</strong>: every workbook row is checked before anything is saved.</li>
+            <li><strong>Four views of one timetable</strong>: Day, Week, Stage and the Activity Inspector.</li>
+            <li><strong>Clash detection and suggested fixes</strong>, including coordinated fixes that move several sessions together.</li>
+            <li><strong>Direct editing</strong>: drag, split and merge, each checked again before it is applied.</li>
+            <li><strong>Versions</strong>: every change is saved as a Version that can be compared and restored.</li>
+            <li><strong>Output</strong>: print-ready PDFs and an Excel export that round-trips back into the app.</li>
+          </ul>
+          <p>Real application · Fictional demonstration data.</p>
+        </div>
+      </section>
+
+      <section class="chapter" id="workspace" aria-labelledby="h-workspace">
+        <p class="kicker"><span class="n">03</span> The workspace</p>
+        <h2 id="h-workspace">One timetable, four ways to read it.</h2>
+        <div class="prose"><p>Day view puts one column per Stage, so a room clash is visible at a glance. Week view shows every Stage from Monday to Friday, Stage view follows one cohort through the week, and the Activity Inspector shows when, where and who for any session.</p></div>
+        <div class="figs">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S01-3840.webp" data-caption="Day view after import: one column per Stage, Version 1, 0 findings." data-alt="Day view after import: one column per Stage, Version 1, 0 findings." aria-label="Enlarge: Day view after import: one column per Stage, Version 1, 0 findings.">
+    <picture><img src="assets/media/cfit/CF-S01-1280.webp" srcset="assets/media/cfit/CF-S01-960.webp 960w, assets/media/cfit/CF-S01-1280.webp 1280w, assets/media/cfit/CF-S01-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="Day view after import: one column per Stage, Version 1, 0 findings."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Day view after import: one column per Stage, Version 1, 0 findings.</span></figcaption>
+</figure>
+        </div>
+        <div class="figs strip" role="group" aria-label="More views (scroll sideways)">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S02-3840.webp" data-caption="Week view: every Stage across Monday to Friday." data-alt="Week view: every Stage across Monday to Friday." aria-label="Enlarge: Week view: every Stage across Monday to Friday.">
+    <picture><img src="assets/media/cfit/CF-S02-1280.webp" srcset="assets/media/cfit/CF-S02-960.webp 960w, assets/media/cfit/CF-S02-1280.webp 1280w, assets/media/cfit/CF-S02-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="Week view: every Stage across Monday to Friday."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Week view: every Stage across Monday to Friday.</span></figcaption>
+</figure>
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S03-3840.webp" data-caption="Stage view: one Stage, the whole week." data-alt="Stage view: one Stage, the whole week." aria-label="Enlarge: Stage view: one Stage, the whole week.">
+    <picture><img src="assets/media/cfit/CF-S03-1280.webp" srcset="assets/media/cfit/CF-S03-960.webp 960w, assets/media/cfit/CF-S03-1280.webp 1280w, assets/media/cfit/CF-S03-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="Stage view: one Stage, the whole week."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Stage view: one Stage, the whole week.</span></figcaption>
+</figure>
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S04-3840.webp" data-caption="The Activity Inspector beside the grid: when, where and who." data-alt="The Activity Inspector beside the grid: when, where and who." aria-label="Enlarge: The Activity Inspector beside the grid: when, where and who.">
+    <picture><img src="assets/media/cfit/CF-S04-1280.webp" srcset="assets/media/cfit/CF-S04-960.webp 960w, assets/media/cfit/CF-S04-1280.webp 1280w, assets/media/cfit/CF-S04-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="The Activity Inspector beside the grid: when, where and who."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The Activity Inspector beside the grid: when, where and who.</span></figcaption>
+</figure>
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/cfit/CF-L02_week-glide_h264_1920x1080p60.mp4"><img src="assets/media/cfit/CF-L02_week-glide_poster_1920.webp" width="1920" height="1080" alt="Week view glide across every Stage (opens the video)"></a></noscript>
+    <video data-mode="once" data-src="assets/media/cfit/CF-L02_week-glide_h264_1920x1080p60.mp4" data-src-sm="assets/media/cfit/CF-L02_week-glide_h264_1280x720p60.mp4" data-poster="assets/media/cfit/CF-L02_week-glide_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Week view glide across every Stage"></video>
+  </div>
+  <figcaption><span>A glide across the Week view, every Stage at once.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+        </div>
+      </section>
+
+      <section class="chapter" id="import" aria-labelledby="h-import">
+        <p class="kicker"><span class="n">04</span> Import &amp; validation</p>
+        <h2 id="h-import">Every row checked. Nothing saved until you confirm.</h2>
+        <div class="prose"><p>Import reads the term’s workbooks and checks every row before anything reaches the database. In the demonstration term, 99 source rows are checked with 0 errors; problem rows would be listed with the reason and the cell they came from.</p></div>
+        <div class="figs two">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S09-2794.webp" data-caption="Import check: 99 source rows checked, 0 errors, before anything is saved." data-alt="Import check: 99 source rows checked, 0 errors, before anything is saved." aria-label="Enlarge: Import check: 99 source rows checked, 0 errors, before anything is saved.">
+    <picture><img src="assets/media/cfit/CF-S09-1280.webp" srcset="assets/media/cfit/CF-S09-960.webp 960w, assets/media/cfit/CF-S09-1280.webp 1280w, assets/media/cfit/CF-S09-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="2794" height="1833" loading="lazy" decoding="async" alt="Import check: 99 source rows checked, 0 errors, before anything is saved."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Import check: 99 source rows checked, 0 errors, before anything is saved.</span></figcaption>
+</figure>
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/cfit/CF-L07_import-check_h264_1920x1080p60.mp4"><img src="assets/media/cfit/CF-L07_import-check_poster_1920.webp" width="1920" height="1080" alt="Check workbook: 99 rows checked before anything is saved (opens the video)"></a></noscript>
+    <video data-mode="loop" data-src="assets/media/cfit/CF-L07_import-check_h264_1920x1080p60.mp4" data-src-sm="assets/media/cfit/CF-L07_import-check_h264_1280x720p60.mp4" data-poster="assets/media/cfit/CF-L07_import-check_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Check workbook: 99 rows checked before anything is saved"></video>
+  </div>
+  <figcaption><span>Check workbook, then the per-row results.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+        </div>
+        <div class="figs">
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/cfit/CF-V02a_import_h264_1920x1080p60.mp4"><img src="assets/media/cfit/CF-V02a_import_poster_1920.webp" width="1920" height="1080" alt="Import it. Every row checked. Nothing saved until you confirm. (opens the video)"></a></noscript>
+    <video data-mode="click" data-src="assets/media/cfit/CF-V02a_import_h264_1920x1080p60.mp4" data-heavy data-poster="assets/media/cfit/CF-V02a_import_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Import it. Every row checked. Nothing saved until you confirm."></video>
+  </div>
+  <figcaption><span>From the product film: import, every row checked, nothing saved until you confirm.</span><span class="tag">Edited product walkthrough</span></figcaption>
+</figure>
+        </div>
+      </section>
+
+      <section class="chapter feature" id="conflicts" aria-labelledby="h-conflicts">
+        <p class="kicker"><span class="n">05</span> Clashes &amp; fixes</p>
+        <h2 id="h-conflicts">Some clashes have no simple fix.</h2>
+        <div class="prose">
+          <p>Validation flags double-booked rooms and staff, rooms that are too small and staff who are unavailable. For each finding, <strong>Suggest fixes</strong> proposes changes that solve the problem without creating a new one.</p>
+          <p>In the demonstration term, import gives <strong>Version 1 with two clashes</strong>. The Wednesday clash has a simple fix: one session moves to a free room, saved as Version 2. The Monday clash is the hard case: a masterclass that cannot move shares a room with a regular session, so the fix moves <strong>three sessions together</strong>. The preview shows each move, with the old slot dashed, and nothing is saved until Apply. Apply saves Version 3 with 0 findings.</p>
+        </div>
+        <div class="figs">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-C01_problem-room-clash_2120.webp" data-caption="Version 1 after import: validation finds two rooms double-booked, and marks both sessions of the Wednesday clash with a warning." data-alt="Version 1 after import: validation finds two rooms double-booked, and marks both sessions of the Wednesday clash with a warning." aria-label="Enlarge: Version 1 after import: validation finds two rooms double-booked, and marks both sessions of the Wednesday clash with a warning.">
+    <picture><source type="image/avif" srcset="assets/media/cfit/CF-C01_problem-room-clash_1280.avif 1280w, assets/media/cfit/CF-C01_problem-room-clash_1920.avif 1920w, assets/media/cfit/CF-C01_problem-room-clash_2120.avif 2120w" sizes="(max-width: 1040px) 100vw, 1000px"><img src="assets/media/cfit/CF-C01_problem-room-clash_1280.webp" srcset="assets/media/cfit/CF-C01_problem-room-clash_1280.webp 1280w, assets/media/cfit/CF-C01_problem-room-clash_1920.webp 1920w, assets/media/cfit/CF-C01_problem-room-clash_2120.webp 2120w" sizes="(max-width: 1040px) 100vw, 1000px" width="2120" height="1192" loading="lazy" decoding="async" alt="Version 1 after import: validation finds two rooms double-booked, and marks both sessions of the Wednesday clash with a warning."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Version 1 after import: validation finds two rooms double-booked, and marks both sessions of the Wednesday clash with a warning.</span></figcaption>
+</figure>
+        </div>
+        <div class="figs two">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S06-2000.webp" data-caption="Version 2 has one finding left. Suggest fixes explains the coordinated three-session fix in plain words." data-alt="Version 2 has one finding left. Suggest fixes explains the coordinated three-session fix in plain words." aria-label="Enlarge: Version 2 has one finding left. Suggest fixes explains the coordinated three-session fix in plain words.">
+    <picture><img src="assets/media/cfit/CF-S06-1280.webp" srcset="assets/media/cfit/CF-S06-960.webp 960w, assets/media/cfit/CF-S06-1280.webp 1280w, assets/media/cfit/CF-S06-1920.webp 1920w, assets/media/cfit/CF-S06-2000.webp 2000w" sizes="(max-width: 1040px) 100vw, 1000px" width="2000" height="1820" loading="lazy" decoding="async" alt="Version 2 has one finding left. Suggest fixes explains the coordinated three-session fix in plain words."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Version 2 has one finding left. Suggest fixes explains the coordinated three-session fix in plain words.</span></figcaption>
+</figure>
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/cfit/CF-V02b_coordinated-fix_h264_1920x1080p60.mp4"><img src="assets/media/cfit/CF-V02b_coordinated-fix_poster_960.webp" width="1920" height="1080" alt="CFIT product film excerpt: a clash is fixed by moving three sessions together (opens the video)"></a></noscript>
+    <video data-mode="click" data-src="assets/media/cfit/CF-V02b_coordinated-fix_h264_1920x1080p60.mp4" data-heavy data-poster="assets/media/cfit/CF-V02b_coordinated-fix_poster_1920.webp" data-poster-sm="assets/media/cfit/CF-V02b_coordinated-fix_poster_960.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="CFIT product film excerpt: a clash is fixed by moving three sessions together"></video>
+  </div>
+  <figcaption><span>From the product film: the clash, the coordinated three-session fix, the preview, then Version 3 with 0 findings.</span><span class="tag">Edited product walkthrough</span></figcaption>
+</figure>
+        </div>
+        <div class="figs two">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-C02_fix-preview_2784.webp" data-caption="A closer look at the preview: the three moves on Thursday, with the old slot dashed. Nothing is saved until Apply." data-alt="A closer look at the preview: the three moves on Thursday, with the old slot dashed. Nothing is saved until Apply." aria-label="Enlarge: A closer look at the preview: the three moves on Thursday, with the old slot dashed. Nothing is saved until Apply.">
+    <picture><source type="image/avif" srcset="assets/media/cfit/CF-C02_fix-preview_1280.avif 1280w, assets/media/cfit/CF-C02_fix-preview_1920.avif 1920w, assets/media/cfit/CF-C02_fix-preview_2560.avif 2560w" sizes="(max-width: 1040px) 100vw, 1000px"><img src="assets/media/cfit/CF-C02_fix-preview_1280.webp" srcset="assets/media/cfit/CF-C02_fix-preview_1280.webp 1280w, assets/media/cfit/CF-C02_fix-preview_1920.webp 1920w, assets/media/cfit/CF-C02_fix-preview_2560.webp 2560w" sizes="(max-width: 1040px) 100vw, 1000px" width="2784" height="1566" loading="lazy" decoding="async" alt="A closer look at the preview: the three moves on Thursday, with the old slot dashed. Nothing is saved until Apply."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>A closer look at the preview: the three moves on Thursday, with the old slot dashed. Nothing is saved until Apply.</span></figcaption>
+</figure>
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S08-3840.webp" data-caption="After Apply: Version 3, 0 findings, current and clean." data-alt="After Apply: Version 3, 0 findings, current and clean." aria-label="Enlarge: After Apply: Version 3, 0 findings, current and clean.">
+    <picture><img src="assets/media/cfit/CF-S08-1280.webp" srcset="assets/media/cfit/CF-S08-960.webp 960w, assets/media/cfit/CF-S08-1280.webp 1280w, assets/media/cfit/CF-S08-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="After Apply: Version 3, 0 findings, current and clean."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>After Apply: Version 3, 0 findings, current and clean.</span></figcaption>
+</figure>
+        </div>
+      </section>
+
+      <section class="chapter" id="editing" aria-labelledby="h-editing">
+        <p class="kicker"><span class="n">06</span> Editing</p>
+        <h2 id="h-editing">Drag. Split. Merge, checked before it is applied.</h2>
+        <div class="prose"><p>Sessions can be reshaped directly on the grid. Every edit is previewed and validated before it is applied: a split keeps the same Tutor and room, and a merge checks that the combined class still fits the room.</p></div>
+        <div class="figs">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S13-3840.webp" data-caption="Direct manipulation: a session dragged to 15:00." data-alt="Direct manipulation: a session dragged to 15:00." aria-label="Enlarge: Direct manipulation: a session dragged to 15:00.">
+    <picture><img src="assets/media/cfit/CF-S13-1280.webp" srcset="assets/media/cfit/CF-S13-960.webp 960w, assets/media/cfit/CF-S13-1280.webp 1280w, assets/media/cfit/CF-S13-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="Direct manipulation: a session dragged to 15:00."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Direct manipulation: a session dragged to 15:00.</span></figcaption>
+</figure>
+        </div>
+        <div class="figs strip" role="group" aria-label="Split and merge (scroll sideways)">
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/cfit/CF-L03_split_h264_1920x1080p60.mp4"><img src="assets/media/cfit/CF-L03_split_poster_1920.webp" width="1920" height="1080" alt="Split preview, Apply split, two 2-hour sessions (opens the video)"></a></noscript>
+    <video data-mode="loop" data-src="assets/media/cfit/CF-L03_split_h264_1920x1080p60.mp4" data-src-sm="assets/media/cfit/CF-L03_split_h264_1280x720p60.mp4" data-poster="assets/media/cfit/CF-L03_split_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Split preview, Apply split, two 2-hour sessions"></video>
+  </div>
+  <figcaption><span>Split preview, Apply, two 2-hour sessions.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+          <figure class="fig portrait">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S10-1080.webp" data-caption="Split a 4-hour lab into two 2-hour sessions (preview)." data-alt="Split a 4-hour lab into two 2-hour sessions (preview)." aria-label="Enlarge: Split a 4-hour lab into two 2-hour sessions (preview).">
+    <picture><img src="assets/media/cfit/CF-S10-1080.webp" srcset="assets/media/cfit/CF-S10-960.webp 960w, assets/media/cfit/CF-S10-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 520px" width="1080" height="1720" loading="lazy" decoding="async" alt="Split a 4-hour lab into two 2-hour sessions (preview)."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Split a 4-hour lab into two 2-hour sessions (preview).</span></figcaption>
+</figure>
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/cfit/CF-L04_merge_h264_1920x1080p60.mp4"><img src="assets/media/cfit/CF-L04_merge_poster_1920.webp" width="1920" height="1080" alt="Choose the Stream, merge preview, one merged session (opens the video)"></a></noscript>
+    <video data-mode="loop" data-src="assets/media/cfit/CF-L04_merge_h264_1920x1080p60.mp4" data-src-sm="assets/media/cfit/CF-L04_merge_h264_1280x720p60.mp4" data-poster="assets/media/cfit/CF-L04_merge_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Choose the Stream, merge preview, one merged session"></video>
+  </div>
+  <figcaption><span>Choose the Stream, merge preview, one merged session.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+          <figure class="fig portrait">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S11-1120.webp" data-caption="Merge preview: 14 + 12 = 26 students, same Tutor, the room fits." data-alt="Merge preview: 14 + 12 = 26 students, same Tutor, the room fits." aria-label="Enlarge: Merge preview: 14 + 12 = 26 students, same Tutor, the room fits.">
+    <picture><img src="assets/media/cfit/CF-S11-1120.webp" srcset="assets/media/cfit/CF-S11-960.webp 960w, assets/media/cfit/CF-S11-1120.webp 1120w" sizes="(max-width: 760px) 100vw, 520px" width="1120" height="2080" loading="lazy" decoding="async" alt="Merge preview: 14 + 12 = 26 students, same Tutor, the room fits."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Merge preview: 14 + 12 = 26 students, same Tutor, the room fits.</span></figcaption>
+</figure>
+        </div>
+        <div class="figs">
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/cfit/CF-V02c_drag-split-merge_h264_1920x1080p60.mp4"><img src="assets/media/cfit/CF-V02c_drag-split-merge_poster_1920.webp" width="1920" height="1080" alt="Drag. Split. Merge, checked before it is applied. (opens the video)"></a></noscript>
+    <video data-mode="click" data-src="assets/media/cfit/CF-V02c_drag-split-merge_h264_1920x1080p60.mp4" data-heavy data-poster="assets/media/cfit/CF-V02c_drag-split-merge_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Drag. Split. Merge, checked before it is applied."></video>
+  </div>
+  <figcaption><span>From the product film: drag, split and merge.</span><span class="tag">Edited product walkthrough</span></figcaption>
+</figure>
+        </div>
+      </section>
+
+      <section class="chapter" id="history" aria-labelledby="h-history">
+        <p class="kicker"><span class="n">07</span> Version history</p>
+        <h2 id="h-history">Every change is a Version you can restore.</h2>
+        <div class="prose"><p>History lists each saved Version with its changes, so a timetabler can see exactly what changed, when, and go back if needed.</p></div>
+        <div class="figs two">
+          <figure class="fig portrait">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S12-1120.webp" data-caption="History: Version 3 and its three changes." data-alt="History: Version 3 and its three changes." aria-label="Enlarge: History: Version 3 and its three changes.">
+    <picture><img src="assets/media/cfit/CF-S12-1120.webp" srcset="assets/media/cfit/CF-S12-960.webp 960w, assets/media/cfit/CF-S12-1120.webp 1120w" sizes="(max-width: 760px) 100vw, 520px" width="1120" height="2080" loading="lazy" decoding="async" alt="History: Version 3 and its three changes."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>History: Version 3 and its three changes.</span></figcaption>
+</figure>
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/cfit/CF-L05_history_h264_1920x1080p60.mp4"><img src="assets/media/cfit/CF-L05_history_poster_1920.webp" width="1920" height="1080" alt="History: Version 3 and its changes (opens the video)"></a></noscript>
+    <video data-mode="click" data-src="assets/media/cfit/CF-L05_history_h264_1920x1080p60.mp4" data-src-sm="assets/media/cfit/CF-L05_history_h264_1280x720p60.mp4" data-poster="assets/media/cfit/CF-L05_history_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="History: Version 3 and its changes"></video>
+  </div>
+  <figcaption><span>History: open Version 3 and read its changes.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+        </div>
+      </section>
+
+      <section class="chapter" id="outputs" aria-labelledby="h-outputs">
+        <p class="kicker"><span class="n">08</span> PDF &amp; Excel</p>
+        <h2 id="h-outputs">Back out to paper and to Excel.</h2>
+        <div class="prose"><p>The app makes print-ready A4 PDFs by day, and exports the exact saved Version as a workbook that can be imported again. At the feature freeze, the Excel round trip came back with nothing missing, added or different.</p></div>
+        <div class="figs strip" role="group" aria-label="Outputs (scroll sideways)">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S15-4678.webp" data-caption="The generated A4 timetable, ready to print." data-alt="The generated A4 timetable, ready to print." aria-label="Enlarge: The generated A4 timetable, ready to print.">
+    <picture><img src="assets/media/cfit/CF-S15-1280.webp" srcset="assets/media/cfit/CF-S15-960.webp 960w, assets/media/cfit/CF-S15-1280.webp 1280w, assets/media/cfit/CF-S15-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="4678" height="3308" loading="lazy" decoding="async" alt="The generated A4 timetable, ready to print."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The generated A4 timetable, ready to print.</span></figcaption>
+</figure>
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/cfit/CF-L06_print-pdf_h264_1920x1080p60.mp4"><img src="assets/media/cfit/CF-L06_print-pdf_poster_1920.webp" width="1920" height="1080" alt="Print PDF: the app makes the PDF, Monday page (opens the video)"></a></noscript>
+    <video data-mode="once" data-src="assets/media/cfit/CF-L06_print-pdf_h264_1920x1080p60.mp4" data-src-sm="assets/media/cfit/CF-L06_print-pdf_h264_1280x720p60.mp4" data-poster="assets/media/cfit/CF-L06_print-pdf_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Print PDF: the app makes the PDF, Monday page"></video>
+  </div>
+  <figcaption><span>Print PDF: the app makes the PDF and opens the Monday page.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S16-2480.webp" data-caption="Print PDF: by day, all teaching weeks, A4 landscape, 5 pages." data-alt="Print PDF: by day, all teaching weeks, A4 landscape, 5 pages." aria-label="Enlarge: Print PDF: by day, all teaching weeks, A4 landscape, 5 pages.">
+    <picture><img src="assets/media/cfit/CF-S16-1280.webp" srcset="assets/media/cfit/CF-S16-960.webp 960w, assets/media/cfit/CF-S16-1280.webp 1280w, assets/media/cfit/CF-S16-1920.webp 1920w, assets/media/cfit/CF-S16-2480.webp 2480w" sizes="(max-width: 1040px) 100vw, 1000px" width="2480" height="2090" loading="lazy" decoding="async" alt="Print PDF: by day, all teaching weeks, A4 landscape, 5 pages."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Print PDF: by day, all teaching weeks, A4 landscape, 5 pages.</span></figcaption>
+</figure>
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="cfit" data-full="assets/media/cfit/CF-S14-1160.webp" data-caption="Export the exact saved Version as a workbook." data-alt="Export the exact saved Version as a workbook." aria-label="Enlarge: Export the exact saved Version as a workbook.">
+    <picture><img src="assets/media/cfit/CF-S14-1160.webp" srcset="assets/media/cfit/CF-S14-960.webp 960w, assets/media/cfit/CF-S14-1160.webp 1160w" sizes="(max-width: 1040px) 100vw, 1000px" width="1160" height="860" loading="lazy" decoding="async" alt="Export the exact saved Version as a workbook."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Export the exact saved Version as a workbook.</span></figcaption>
+</figure>
+        </div>
+      </section>
+
+      <section class="chapter" id="engineering" aria-labelledby="h-engineering">
+        <p class="kicker"><span class="n">09</span> Engineering</p>
+        <h2 id="h-engineering">A modular monolith with tests at every layer.</h2>
+        <div class="prose">
+          <p>A React client talks to a Spring Boot API organised as a modular monolith, backed by PostgreSQL with versioned migrations. Every push to main runs unit tests, integration tests and five browser test groups on GitHub Actions.</p>
+        </div>
+        <div class="figs two">
+          <figure class="fig diagram">
+  <button class="shot" type="button" data-zoom data-group="cfit-dia" data-full="assets/media/cfit/CF-D01-3840.webp" data-caption="Architecture: client, web server, modular-monolith API, PostgreSQL. " data-alt="Architecture: client, web server, modular-monolith API, PostgreSQL. " aria-label="Enlarge: Architecture: client, web server, modular-monolith API, PostgreSQL. ">
+    <picture><img src="assets/media/cfit/CF-D01-1920.webp" srcset="assets/media/cfit/CF-D01-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="Architecture: client, web server, modular-monolith API, PostgreSQL. "></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Architecture: client, web server, modular-monolith API, PostgreSQL. </span></figcaption>
+</figure>
+          <figure class="fig diagram">
+  <button class="shot" type="button" data-zoom data-group="cfit-dia" data-full="assets/media/cfit/CF-D02-3840.webp" data-caption="Quality and delivery: the CI pipeline and its gates. A designed diagram, not a screenshot." data-alt="Quality and delivery: the CI pipeline and its gates. A designed diagram, not a screenshot." aria-label="Enlarge: Quality and delivery: the CI pipeline and its gates. A designed diagram, not a screenshot.">
+    <picture><img src="assets/media/cfit/CF-D02-1920.webp" srcset="assets/media/cfit/CF-D02-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="Quality and delivery: the CI pipeline and its gates. A designed diagram, not a screenshot."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Quality and delivery: the CI pipeline and its gates. A designed diagram, not a screenshot.</span></figcaption>
+</figure>
+        </div>
+        <div class="band" role="list">
+          <div role="listitem"><div class="v">4,466 / 4,466</div><div class="k">automated full-stack action paths passed (the full action matrix)</div><div class="d">24 Oct 2026 freeze checks</div></div>
+          <div role="listitem"><div class="v">0 · 0 · 0</div><div class="k">Excel round trip: missing, added, different</div><div class="d">24 Oct 2026 feature freeze</div></div>
+          <div role="listitem"><div class="v">5</div><div class="k">browser test groups on every push to main, plus unit and integration tests</div><div class="d">GitHub Actions</div></div>
+          <div role="listitem"><div class="v">327 / 353</div><div class="k">commits on main by me; 160 pull requests opened</div><div class="d">to 7 Nov 2026</div></div>
+        </div>
+        <p>At the October 2026 feature freeze, all 4,466 API-level action paths passed. Browser interaction tests ran separately, and the Excel round trip returned no missing, added or changed records.</p>
+      </section>
+
+      <section class="chapter" id="results" aria-labelledby="h-results">
+        <p class="kicker"><span class="n">10</span> Outcome</p>
+        <h2 id="h-results">One workflow from import to export.</h2>
+        <div class="prose">
+          <p>The system gives the CFIT team one place that checks every change as it is made, instead of cross-checking three workbooks by hand, so a clash is found when it is created rather than in the first week of teaching.</p>
+          <p>The source code is private to the project. A walkthrough is available on request.</p>
+        </div>
+        <div class="btn-row" style="margin-top:22px">
+          <a class="btn btn-primary" href="https://cfit-timetable-development.github.io/CFIT-Showcase/" target="_blank" rel="noopener noreferrer">Product showcase and film ↗<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="btn" href="mailto:michael16585@outlook.com?subject=CFIT%20Timetable%20walkthrough" data-email>Ask for a walkthrough</a>
+        </div>
+      </section>
+
+      <section class="chapter" aria-label="Next project">
+        <a class="next w-awhina" href="project-awai.html"><span class="art w-awhina" aria-hidden="true"></span><span><span class="eyebrow">Next project</span><br><span class="t">Quick Response &amp; Information App · Android</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Michael Chen · <a href="mailto:michael16585@outlook.com" data-email>michael16585@outlook.com</a></span>
+    <span>Software engineering · Michael Chen</span>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+
+</body>
+</html>

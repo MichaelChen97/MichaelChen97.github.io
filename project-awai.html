@@ -1,92 +1,334 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>AWAI Quick Response &amp; Information App | Michael Chen</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="AWAI Android Kotlin MVVM Jetpack Navigation ViewBinding" name="keywords">
-        <meta content="Project detail page for the AWAI Quick Response and Information App." name="description">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body class="detail-page">
-        <div class="detail-wrapper">
-            <header class="detail-topbar">
-                <div class="detail-brand">
-                    <div class="profile-avatar initials-avatar">MC</div>
-                    <div>
-                        <h1>Michael Chen</h1>
-                        <p>Software Engineering Student</p>
-                    </div>
-                </div>
-                <nav class="detail-nav" aria-label="Project navigation">
-                    <a href="index.html#home">Home</a>
-                    <a href="index.html#projects">Projects</a>
-                </nav>
-            </header>
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quick Response &amp; Information App (AWAI project) — Michael Chen</title>
+  <meta name="description" content="Two Android apps built for one client as part of the AWAI project: Quick Response for tamariki and rangatahi, and the Information App for parents and caregivers, both in English and te reo Māori. In Quick Response, Michael Chen built the data layer, setup, contacts, the quiz screens, profile and Tamariki interface.">
+  <meta name="theme-color" content="#07090c">
+  <link rel="canonical" href="https://michaelchen97.github.io/project-awai.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Michael Chen — Software Engineer">
+  <meta property="og:title" content="Quick Response &amp; Information App (AWAI project) — Michael Chen">
+  <meta property="og:description" content="Two Android apps built for one client as part of the AWAI project: Quick Response for tamariki and rangatahi, and the Information App for parents and caregivers, both in English and te reo Māori. In Quick Response, Michael Chen built the data layer, setup, contacts, the quiz screens, profile and Tamariki interface.">
+  <meta property="og:url" content="https://michaelchen97.github.io/project-awai.html">
+  <meta property="og:image" content="https://michaelchen97.github.io/assets/og/og-project-awai.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Quick Response &amp; Information App (AWAI project) — Michael Chen: preview image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://michaelchen97.github.io/assets/og/og-project-awai.jpg">
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Fredoka-Medium-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23eef2f6'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' text-anchor='middle' fill='%2307090c'%3EMC%3C/text%3E%3C/svg%3E">
+</head>
 
-            <main>
-                <section class="project-detail section-panel">
-                    <div class="content-inner">
-                        <div class="project-detail-header">
-                            <a class="back-link" href="index.html#projects"><i class="fa fa-arrow-left"></i>Back to Projects</a>
-                            <h2>AWAI Quick Response &amp; Information App</h2>
-                            <div class="tech-tags tag-row">
-                                <span>Kotlin</span>
-                                <span>MVVM</span>
-                                <span>Jetpack Navigation</span>
-                                <span>ViewBinding</span>
-                            </div>
-                        </div>
+<body class="w-awhina">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">MC</span><span>Michael Chen</span><span class="sr-only">, home</span></a>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="./#work" data-nav="work" aria-current="true">Work</a>
+      <a href="./#toolbox" data-nav="toolbox">Toolbox</a>
+      <a href="./#about" data-nav="about">About</a>
+      <a href="./#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-sm header-cta" href="https://canva.link/l92zh4dfmt63nav" target="_blank" rel="noopener noreferrer">Résumé<span class="sr-only"> (opens in a new tab)</span></a>
+      <button class="btn btn-sm nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
 
-                        <div class="detail-meta-grid">
-                            <div class="detail-meta-card">
-                                <span>Time</span>
-                                <p>Apr 2026 – Present</p>
-                            </div>
-                            <div class="detail-meta-card">
-                                <span>Tech Stack</span>
-                                <p>Kotlin, MVVM, Jetpack Navigation, ViewBinding</p>
-                            </div>
-                            <div class="detail-meta-card">
-                                <span>Status</span>
-                                <p>In progress</p>
-                            </div>
-                        </div>
-
-                        <div class="detail-layout">
-                            <div class="detail-block">
-                                <h3>Project Overview</h3>
-                                <p>A client-facing Android prototype designed to support Tamariki, Rangatahi, parents, and caregivers through quick response and information features.</p>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>Key Features / Responsibilities</h3>
-                                <ul class="detail-list">
-                                    <li>Implemented core screens including Home, Quick Contacts, Contact Management, Profile, Information pages, Help Me Decide, quiz/result pages, and alert simulation flows.</li>
-                                    <li>Built a single-Activity, multi-Fragment MVVM structure using Jetpack Navigation and ViewBinding to improve navigation consistency and maintainability.</li>
-                                    <li>Participated in the first online client meeting, demonstrated the prototype, collected feedback, and refined the app using User-Centred Design principles.</li>
-                                    <li>Designed a mobile-first interface with quick response flows, English/Māori language considerations, simulated contact data, and AWAI-inspired visual styling.</li>
-                                </ul>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>Technical Implementation</h3>
-                                <p>The prototype uses a single Android activity with multiple fragments connected through Jetpack Navigation. ViewBinding keeps UI code clearer, while the MVVM structure separates screens, navigation flows, and simulated data handling for easier iteration.</p>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>What I Learned</h3>
-                                <p>Practical Android prototyping, client-facing demo preparation, navigation structure, ViewBinding usage, mobile-first UI thinking, and user-centred iteration.</p>
-                            </div>
-
-                            <div class="screenshot-placeholder">Screenshots / demo materials will be added later.</div>
-                        </div>
-                    </div>
-                </section>
-            </main>
+<main id="main">
+  <section class="case-hero w-awhina">
+    <div class="art w-awhina" aria-hidden="true"></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="./#awhina">Work</a><span aria-hidden="true">/</span><span>Quick Response &amp; Information App</span></nav>
+      <div class="ch-grid">
+        <div class="ch-copy">
+          <p class="tag">AWAI client project · Android · two apps</p>
+          <h1>Quick Response &amp; Information App</h1>
+          <p class="lede">Two separate Android apps, built for one client as part of the <strong>AWAI project</strong>. <strong>Quick Response</strong> helps tamariki (children) and rangatahi (young people) reach a trusted adult quickly; the <strong>Information App</strong> is for their parents and caregivers. Both work in English and te reo Māori.</p>
+          <p class="role"><b>My role</b><span>Quick Response co-developer · team of seven</span></p>
         </div>
-    </body>
+        <div class="ch-media">
+          <div class="figs phones pair" style="margin:0"><figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw-hero" data-full="assets/media/awhina/AW-S05-1440.webp" data-caption="Rangatahi (13–17) Home." data-alt="Rangatahi (13–17) Home." aria-label="Enlarge: Rangatahi (13–17) Home.">
+    <picture><img src="assets/media/awhina/AW-S05-1440.webp" srcset="assets/media/awhina/AW-S05-720.webp 720w, assets/media/awhina/AW-S05-1080.webp 1080w, assets/media/awhina/AW-S05-1440.webp 1440w" sizes="(max-width: 960px) 44vw, 300px" width="1440" height="3120" loading="eager" decoding="async" alt="Rangatahi (13–17) Home."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Rangatahi (13–17) Home.</span></figcaption>
+</figure><figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw-hero" data-full="assets/media/awhina/AW-S12-1440.webp" data-caption="Tamariki (5–12) Home: part of the children’s interface I built." data-alt="Tamariki (5–12) Home: part of the children’s interface I built." aria-label="Enlarge: Tamariki (5–12) Home: part of the children’s interface I built.">
+    <picture><img src="assets/media/awhina/AW-S12-1440.webp" srcset="assets/media/awhina/AW-S12-720.webp 720w, assets/media/awhina/AW-S12-1080.webp 1080w, assets/media/awhina/AW-S12-1440.webp 1440w" sizes="(max-width: 960px) 44vw, 300px" width="1440" height="3120" loading="eager" decoding="async" alt="Tamariki (5–12) Home: part of the children’s interface I built."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Tamariki (5–12) Home: part of the children’s interface I built.</span></figcaption>
+</figure></div>
+        </div>
+        <dl class="facts">
+        <div><dt>Client</dt><dd>AWAI project (client prototypes)</dd></div>
+        <div><dt>Stack</dt><dd>Kotlin · Room · Jetpack Navigation · ViewBinding</dd></div>
+        <div><dt>When</dt><dd>2026</dd></div>
+      </dl>
+      </div>
+    </div>
+  </section>
+  <div class="wrap case-layout">
+    <nav class="toc" aria-label="On this page"><a href="#context">Two apps</a><a href="#built">What I built</a><a href="#team">The team’s part</a><a href="#walkthrough">Quick Response</a><a href="#info-app">Information App</a><a href="#engineering">How it works</a><a href="#safety">Outcome</a></nav>
+    <div>
+      <section class="chapter" id="context" aria-labelledby="h-context">
+        <p class="kicker"><span class="n">01</span> Two apps</p>
+        <h2 id="h-context">Two apps for two audiences.</h2>
+        <div class="prose">
+          <p>Two Android apps serve different audiences within the AWAI client project.</p>
+          <p><strong>Quick Response</strong> is for young people. It works out the user’s age group from their date of birth: tamariki aged 5–12 get a simpler, illustrated interface, and rangatahi aged 13–17 get a more grown-up one. Both versions lead to the same idea: a trusted contact is always a short, deliberate hold away, and a short <strong>Help Me Decide</strong> quiz helps a young person work out what kind of help they need.</p>
+          <p>The <strong>Information App</strong> (launcher name Pārongo) is for parents and caregivers. It explains uplifting, the process and legal rights in plain language, with a short quiz. It is shown here as the AWAI team’s app.</p>
+
+        </div>
+<div class="figs">
+  <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="ia-pair" data-full="assets/media/information-app/IA-C01_dual-device-3840.webp" data-caption="Quick Response and the Information App: two separate apps for young people and caregivers." data-alt="Quick Response and the Information App: two separate apps for young people and caregivers." aria-label="Enlarge: Quick Response and the Information App: two separate apps for young people and caregivers.">
+    <picture><img src="assets/media/information-app/IA-C01_dual-device-1920.webp" srcset="assets/media/information-app/IA-C01_dual-device-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="Quick Response and the Information App: two separate apps for young people and caregivers."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Quick Response and the Information App: two separate apps for young people and caregivers.</span></figcaption>
+</figure>
+</div>
+<div class="figs">
+  <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/information-app/IA-F01_dual-app_h264_1920x1080p60.mp4"><img src="assets/media/information-app/IA-F01_dual-app_poster_1920.webp" width="1920" height="1080" alt="An overview of the two apps, using their real screens and recordings. (opens the video)"></a></noscript>
+    <video data-mode="click" data-src="assets/media/information-app/IA-F01_dual-app_h264_1920x1080p60.mp4" data-poster="assets/media/information-app/IA-F01_dual-app_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="An overview of the two apps, using their real screens and recordings."></video>
+  </div>
+  <figcaption><span>An overview of the two apps, using their real screens and recordings.</span><span class="tag">Edited app overview</span></figcaption>
+</figure>
+</div>
+      </section>
+      <section class="chapter" id="built" aria-labelledby="h-built">
+        <p class="kicker"><span class="n">02</span> What I built</p>
+        <h2 id="h-built">In Quick Response: the data layer and the whole children’s interface.</h2>
+        <div class="prose">
+          <ul>
+            <li>The <strong>Room data layer</strong>: the database, its entities and the migrations.</li>
+            <li>The <strong>first-launch setup</strong>: six screens, with helpers and their English and te reo Māori strings.</li>
+            <li>The <strong>contacts</strong> module, <strong>Edit My Details</strong> and the <strong>Profile</strong> screens.</li>
+            <li>The <strong>Help Me Decide</strong> quiz screens (the decision logic is the team lead’s).</li>
+            <li>The <strong>entire Tamariki interface</strong>, the age routers and the settings.</li>
+            <li>The first Home screen and the hold-to-alert prototype.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="chapter" id="team" aria-labelledby="h-team">
+        <p class="kicker"><span class="n">03</span> The team’s part</p>
+        <h2 id="h-team">What others built.</h2>
+        <div class="prose">
+          <p>The team lead built the app shell, navigation, messaging and permissions, caregiver logic, and final Help Me Decide logic. My contribution focused on data, setup, contacts, profiles, quiz screens and the Tamariki interface.</p>
+        </div>
+      </section>
+      <section class="chapter feature" id="walkthrough" aria-labelledby="h-walkthrough">
+        <p class="kicker"><span class="n">04</span> Walkthrough</p>
+        <h2 id="h-walkthrough">Quick Response, screen by screen.</h2>
+        <div class="prose"><p>Android emulator demonstrations with fictional profiles and contacts.</p></div>
+<div class="figs phones">
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw" data-full="assets/media/awhina/AW-S02-1440.webp" data-caption="First-launch setup: the date of birth picks the version (13–17 Rangatahi, 5–12 Tamariki). Setup flow and age routing: mine." data-alt="First-launch setup: the date of birth picks the version (13–17 Rangatahi, 5–12 Tamariki). Setup flow and age routing: mine." aria-label="Enlarge: First-launch setup: the date of birth picks the version (13–17 Rangatahi, 5–12 Tamariki). Setup flow and age routing: mine.">
+    <picture><img src="assets/media/awhina/AW-S02-1440.webp" srcset="assets/media/awhina/AW-S02-720.webp 720w, assets/media/awhina/AW-S02-1080.webp 1080w, assets/media/awhina/AW-S02-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="First-launch setup: the date of birth picks the version (13–17 Rangatahi, 5–12 Tamariki). Setup flow and age routing: mine."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>First-launch setup: the date of birth picks the version (13–17 Rangatahi, 5–12 Tamariki). Setup flow and age routing: mine.</span></figcaption>
+</figure>
+  <figure class="fig fig-video phoneshot">
+  <div class="frame" style="--ar:1080/2340">
+    <noscript><a class="nojs" href="assets/media/awhina/AW-L01_language-toggle_h264_1080x2340p60.mp4"><img src="assets/media/awhina/AW-L01_language-toggle_poster_1080.webp" width="1080" height="2340" alt="Switching the Home screen from English to te reo Māori and back (opens the video)"></a></noscript>
+    <video data-mode="loop" data-src="assets/media/awhina/AW-L01_language-toggle_h264_1080x2340p60.mp4" data-src-sm="assets/media/awhina/AW-L01_language-toggle_h264_720x1560p60.mp4" data-poster="assets/media/awhina/AW-L01_language-toggle_poster_1080.webp" width="1080" height="2340" preload="none" muted playsinline aria-label="Switching the Home screen from English to te reo Māori and back"></video>
+  </div>
+  <figcaption><span>The app runs in English and te reo Māori. The toolbar toggle is the team lead’s.</span><span class="tag">Android emulator demonstration</span></figcaption>
+</figure>
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw" data-full="assets/media/awhina/AW-S07-1440.webp" data-caption="Contacts: search and trusted people. Contacts module: mine." data-alt="Contacts: search and trusted people. Contacts module: mine." aria-label="Enlarge: Contacts: search and trusted people. Contacts module: mine.">
+    <picture><img src="assets/media/awhina/AW-S07-1440.webp" srcset="assets/media/awhina/AW-S07-720.webp 720w, assets/media/awhina/AW-S07-1080.webp 1080w, assets/media/awhina/AW-S07-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="Contacts: search and trusted people. Contacts module: mine."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Contacts: search and trusted people. Contacts module: mine.</span></figcaption>
+</figure>
+</div>
+<div class="figs phones">
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw" data-full="assets/media/awhina/AW-S10a-1440.webp" data-caption="Profile: details and safety setup. Profile screens: mine." data-alt="Profile: details and safety setup. Profile screens: mine." aria-label="Enlarge: Profile: details and safety setup. Profile screens: mine.">
+    <picture><img src="assets/media/awhina/AW-S10a-1440.webp" srcset="assets/media/awhina/AW-S10a-720.webp 720w, assets/media/awhina/AW-S10a-1080.webp 1080w, assets/media/awhina/AW-S10a-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="Profile: details and safety setup. Profile screens: mine."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Profile: details and safety setup. Profile screens: mine.</span></figcaption>
+</figure>
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw" data-full="assets/media/awhina/AW-S09a-1440.webp" data-caption="Help Me Decide, step 1 of 3. Quiz screens: mine." data-alt="Help Me Decide, step 1 of 3. Quiz screens: mine." aria-label="Enlarge: Help Me Decide, step 1 of 3. Quiz screens: mine.">
+    <picture><img src="assets/media/awhina/AW-S09a-1440.webp" srcset="assets/media/awhina/AW-S09a-720.webp 720w, assets/media/awhina/AW-S09a-1080.webp 1080w, assets/media/awhina/AW-S09a-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="Help Me Decide, step 1 of 3. Quiz screens: mine."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Help Me Decide, step 1 of 3. Quiz screens: mine.</span></figcaption>
+</figure>
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw" data-full="assets/media/awhina/AW-S09d-1440.webp" data-caption="A suggested next step. The quiz screens are mine; the decision logic that picks this result is the team lead’s." data-alt="A suggested next step. The quiz screens are mine; the decision logic that picks this result is the team lead’s." aria-label="Enlarge: A suggested next step. The quiz screens are mine; the decision logic that picks this result is the team lead’s.">
+    <picture><img src="assets/media/awhina/AW-S09d-1440.webp" srcset="assets/media/awhina/AW-S09d-720.webp 720w, assets/media/awhina/AW-S09d-1080.webp 1080w, assets/media/awhina/AW-S09d-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="A suggested next step. The quiz screens are mine; the decision logic that picks this result is the team lead’s."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>A suggested next step. The quiz screens are mine; the decision logic that picks this result is the team lead’s.</span></figcaption>
+</figure>
+</div>
+<div class="figs phones">
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw" data-full="assets/media/awhina/AW-S13a-1440.webp" data-caption="The children’s version of the quiz: plain questions and big answer buttons. Tamariki interface: mine." data-alt="The children’s version of the quiz: plain questions and big answer buttons. Tamariki interface: mine." aria-label="Enlarge: The children’s version of the quiz: plain questions and big answer buttons. Tamariki interface: mine.">
+    <picture><img src="assets/media/awhina/AW-S13a-1440.webp" srcset="assets/media/awhina/AW-S13a-720.webp 720w, assets/media/awhina/AW-S13a-1080.webp 1080w, assets/media/awhina/AW-S13a-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="The children’s version of the quiz: plain questions and big answer buttons. Tamariki interface: mine."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The children’s version of the quiz: plain questions and big answer buttons. Tamariki interface: mine.</span></figcaption>
+</figure>
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw" data-full="assets/media/awhina/AW-S14c-1440.webp" data-caption="The children’s Profile in te reo Māori. Tamariki interface: mine." data-alt="The children’s Profile in te reo Māori. Tamariki interface: mine." aria-label="Enlarge: The children’s Profile in te reo Māori. Tamariki interface: mine.">
+    <picture><img src="assets/media/awhina/AW-S14c-1440.webp" srcset="assets/media/awhina/AW-S14c-720.webp 720w, assets/media/awhina/AW-S14c-1080.webp 1080w, assets/media/awhina/AW-S14c-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="The children’s Profile in te reo Māori. Tamariki interface: mine."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The children’s Profile in te reo Māori. Tamariki interface: mine.</span></figcaption>
+</figure>
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="aw" data-full="assets/media/awhina/AW-S11-1440.webp" data-caption="The Rangatahi Home in te reo Māori. Home built on my first prototype; alert sending and the toggle: the team lead’s." data-alt="The Rangatahi Home in te reo Māori. Home built on my first prototype; alert sending and the toggle: the team lead’s." aria-label="Enlarge: The Rangatahi Home in te reo Māori. Home built on my first prototype; alert sending and the toggle: the team lead’s.">
+    <picture><img src="assets/media/awhina/AW-S11-1440.webp" srcset="assets/media/awhina/AW-S11-720.webp 720w, assets/media/awhina/AW-S11-1080.webp 1080w, assets/media/awhina/AW-S11-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="The Rangatahi Home in te reo Māori. Home built on my first prototype; alert sending and the toggle: the team lead’s."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The Rangatahi Home in te reo Māori. Home built on my first prototype; alert sending and the toggle: the team lead’s.</span></figcaption>
+</figure>
+</div>
+<h3>In motion</h3>
+<div class="figs">
+  <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/awhina/AW-F02_landscape_h264_1920x1080p60.mp4"><img src="assets/media/awhina/AW-F02_landscape_poster_1920.webp" width="1920" height="1080" alt="Edit of Quick Response screens: homes, contacts and Help Me Decide (opens the video)"></a></noscript>
+    <video data-mode="click" data-src="assets/media/awhina/AW-F02_landscape_h264_1920x1080p60.mp4" data-src-sm="assets/media/awhina/AW-F02_landscape_h264_1280x720p60.mp4" data-heavy data-poster="assets/media/awhina/AW-F02_landscape_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Edit of Quick Response screens: homes, contacts and Help Me Decide"></video>
+  </div>
+  <figcaption><span>A short showcase of Quick Response’s screens.</span><span class="tag">Screenshot showcase</span></figcaption>
+</figure>
+</div>
+      </section>
+      <section class="chapter feature" id="info-app" aria-labelledby="h-info-app">
+        <p class="kicker"><span class="n">05</span> Information App</p>
+        <h2 id="h-info-app">Information for parents and caregivers.</h2>
+        <div class="prose">
+          <p>The Information App explains, in English and te reo Māori, what uplifting is, the five types of uplifting and the process step by step, then the legal rights and responsibilities of parents and of caregivers on two tabs. A quiz draws 10 of its 30 yes/no questions at random and explains each answer. A first-run profile (name, date of birth, address, language) stays on the device. The wording is prototype content written for the client project, not legal advice.</p>
+
+        </div>
+<div class="figs phones">
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="ia" data-full="assets/media/information-app/IA-S06_home-en-1440.webp" data-caption="Home gives parents and caregivers quick access to information and the quiz." data-alt="Home gives parents and caregivers quick access to information and the quiz." aria-label="Enlarge: Home gives parents and caregivers quick access to information and the quiz.">
+    <picture><img src="assets/media/information-app/IA-S06_home-en-1440.webp" srcset="assets/media/information-app/IA-S06_home-en-720.webp 720w, assets/media/information-app/IA-S06_home-en-1080.webp 1080w, assets/media/information-app/IA-S06_home-en-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="Home gives parents and caregivers quick access to information and the quiz."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Home gives parents and caregivers quick access to information and the quiz.</span></figcaption>
+</figure>
+  <figure class="fig fig-video phoneshot">
+  <div class="frame" style="--ar:1080/2340">
+    <noscript><a class="nojs" href="assets/media/information-app/IA-L01_language-toggle_h264_1080x2340p60.mp4"><img src="assets/media/information-app/IA-L01_language-toggle_poster_1080.webp" width="1080" height="2340" alt="The Information App Home switching from English to te reo Māori and back with the toggle at the top right (opens the video)"></a></noscript>
+    <video data-mode="loop" data-src="assets/media/information-app/IA-L01_language-toggle_h264_1080x2340p60.mp4" data-src-sm="assets/media/information-app/IA-L01_language-toggle_h264_720x1560p60.mp4" data-poster="assets/media/information-app/IA-L01_language-toggle_poster_1080.webp" width="1080" height="2340" preload="none" muted playsinline aria-label="The Information App Home switching from English to te reo Māori and back with the toggle at the top right"></video>
+  </div>
+  <figcaption><span>Home switching from English to te reo Māori and back with the toolbar toggle.</span><span class="tag">Android emulator demonstration</span></figcaption>
+</figure>
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="ia" data-full="assets/media/information-app/IA-S07_information-hub-en-1440.webp" data-caption="The information hub brings together uplifting, the process and legal rights." data-alt="The information hub brings together uplifting, the process and legal rights." aria-label="Enlarge: The information hub brings together uplifting, the process and legal rights.">
+    <picture><img src="assets/media/information-app/IA-S07_information-hub-en-1440.webp" srcset="assets/media/information-app/IA-S07_information-hub-en-720.webp 720w, assets/media/information-app/IA-S07_information-hub-en-1080.webp 1080w, assets/media/information-app/IA-S07_information-hub-en-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="The information hub brings together uplifting, the process and legal rights."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The information hub brings together uplifting, the process and legal rights.</span></figcaption>
+</figure>
+</div>
+<div class="figs phones">
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="ia" data-full="assets/media/information-app/IA-S09_types-of-uplifting-en-1440.webp" data-caption="Five types of uplifting, explained in the team’s prototype content." data-alt="Five types of uplifting, explained in the team’s prototype content." aria-label="Enlarge: Five types of uplifting, explained in the team’s prototype content.">
+    <picture><img src="assets/media/information-app/IA-S09_types-of-uplifting-en-1440.webp" srcset="assets/media/information-app/IA-S09_types-of-uplifting-en-720.webp 720w, assets/media/information-app/IA-S09_types-of-uplifting-en-1080.webp 1080w, assets/media/information-app/IA-S09_types-of-uplifting-en-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="Five types of uplifting, explained in the team’s prototype content."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Five types of uplifting, explained in the team’s prototype content.</span></figcaption>
+</figure>
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="ia" data-full="assets/media/information-app/IA-S10_uplifting-process-en-1440.webp" data-caption="The uplifting process, presented in six numbered steps." data-alt="The uplifting process, presented in six numbered steps." aria-label="Enlarge: The uplifting process, presented in six numbered steps.">
+    <picture><img src="assets/media/information-app/IA-S10_uplifting-process-en-1440.webp" srcset="assets/media/information-app/IA-S10_uplifting-process-en-720.webp 720w, assets/media/information-app/IA-S10_uplifting-process-en-1080.webp 1080w, assets/media/information-app/IA-S10_uplifting-process-en-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="The uplifting process, presented in six numbered steps."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The uplifting process, presented in six numbered steps.</span></figcaption>
+</figure>
+  <figure class="fig fig-video phoneshot">
+  <div class="frame" style="--ar:1080/2340">
+    <noscript><a class="nojs" href="assets/media/information-app/IA-L03_legal-rights-tabs_h264_1080x2340p60.mp4"><img src="assets/media/information-app/IA-L03_legal-rights-tabs_poster_1080.webp" width="1080" height="2340" alt="Switch between the Parents and Caregivers tabs in Legal Rights. (opens the video)"></a></noscript>
+    <video data-mode="loop" data-src="assets/media/information-app/IA-L03_legal-rights-tabs_h264_1080x2340p60.mp4" data-src-sm="assets/media/information-app/IA-L03_legal-rights-tabs_h264_720x1560p60.mp4" data-poster="assets/media/information-app/IA-L03_legal-rights-tabs_poster_1080.webp" width="1080" height="2340" preload="none" muted playsinline aria-label="Switch between the Parents and Caregivers tabs in Legal Rights."></video>
+  </div>
+  <figcaption><span>Switch between the Parents and Caregivers tabs in Legal Rights.</span><span class="tag">Android emulator demonstration</span></figcaption>
+</figure>
+</div>
+<div class="figs phones">
+  <figure class="fig fig-video phoneshot">
+  <div class="frame" style="--ar:1080/2340">
+    <noscript><a class="nojs" href="assets/media/information-app/IA-L02_quiz-answer_h264_1080x2340p60.mp4"><img src="assets/media/information-app/IA-L02_quiz-answer_poster_1080.webp" width="1080" height="2340" alt="Answer a quiz question, read the explanation and continue. (opens the video)"></a></noscript>
+    <video data-mode="click" data-src="assets/media/information-app/IA-L02_quiz-answer_h264_1080x2340p60.mp4" data-src-sm="assets/media/information-app/IA-L02_quiz-answer_h264_720x1560p60.mp4" data-heavy data-poster="assets/media/information-app/IA-L02_quiz-answer_poster_1080.webp" width="1080" height="2340" preload="none" muted playsinline aria-label="Answer a quiz question, read the explanation and continue."></video>
+  </div>
+  <figcaption><span>Answer a quiz question, read the explanation and continue.</span><span class="tag">Android emulator demonstration</span></figcaption>
+</figure>
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="ia" data-full="assets/media/information-app/IA-S17_quiz-result-en-1440.webp" data-caption="The quiz result summarizes the score." data-alt="The quiz result summarizes the score." aria-label="Enlarge: The quiz result summarizes the score.">
+    <picture><img src="assets/media/information-app/IA-S17_quiz-result-en-1440.webp" srcset="assets/media/information-app/IA-S17_quiz-result-en-720.webp 720w, assets/media/information-app/IA-S17_quiz-result-en-1080.webp 1080w, assets/media/information-app/IA-S17_quiz-result-en-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="The quiz result summarizes the score."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The quiz result summarizes the score.</span></figcaption>
+</figure>
+  <figure class="fig phoneshot">
+  <button class="shot" type="button" data-zoom data-group="ia" data-full="assets/media/information-app/IA-S21_home-mi-1440.webp" data-caption="The same Home screen in te reo Māori." data-alt="The same Home screen in te reo Māori." aria-label="Enlarge: The same Home screen in te reo Māori.">
+    <picture><img src="assets/media/information-app/IA-S21_home-mi-1440.webp" srcset="assets/media/information-app/IA-S21_home-mi-720.webp 720w, assets/media/information-app/IA-S21_home-mi-1080.webp 1080w, assets/media/information-app/IA-S21_home-mi-1440.webp 1440w" sizes="(max-width: 420px) 92vw, (max-width: 860px) 46vw, 380px" width="1440" height="3120" loading="lazy" decoding="async" alt="The same Home screen in te reo Māori."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The same Home screen in te reo Māori.</span></figcaption>
+</figure>
+</div>
+      </section>
+      <section class="chapter" id="engineering" aria-labelledby="h-engineering">
+        <p class="kicker"><span class="n">06</span> How it works</p>
+        <h2 id="h-engineering">Small, offline and bilingual.</h2>
+        <div class="prose">
+          <p><strong>Quick Response:</strong></p>
+          <ul>
+            <li>Two activities (the splash and the host) with 24 fragment destinations in one navigation graph.</li>
+            <li>Room database version 5 with three tables: the user profile, key contacts and app settings.</li>
+            <li>The age group is calculated from the date of birth on every launch, so it is never stored or out of date.</li>
+            <li>All 476 translatable strings exist in te reo Māori; the language choice is stored and applied app-wide.</li>
+          </ul>
+          <p><strong>Information App:</strong></p>
+          <ul>
+            <li>One host activity with 13 fragments in a navigation graph, and a splash screen.</li>
+            <li>A Room database (version 1) with a single profile row; profile and quiz screens follow MVVM with ViewModels and StateFlow.</li>
+            <li>The quiz reads its 30 questions from a bundled JSON file and shuffles 10 per attempt.</li>
+            <li>203 of its 204 translatable strings exist in te reo Māori, switched live from the toolbar.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="chapter" id="safety" aria-labelledby="h-safety">
+        <p class="kicker"><span class="n">07</span> Outcome</p>
+        <h2 id="h-safety">Two age groups, a familiar path to help.</h2>
+        <div class="prose"><p>Quick Response brings age-based setup, trusted contacts and bilingual screens into one flow. Building the Tamariki interface meant adapting the wording, controls and layout for younger users while keeping the same core tasks.</p><p class="note">Visual credits: AI-generated koru background; the children’s helper illustration and two Information App icons were made with Canva.</p></div>
+      </section>
+      <section class="chapter" aria-label="Next project">
+        <a class="next w-livestock" href="project-livestock.html"><span class="art w-livestock" aria-hidden="true"></span><span><span class="eyebrow">Next project</span><br><span class="t">Livestock Management · .NET MAUI</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Michael Chen · <a href="mailto:michael16585@outlook.com" data-email>michael16585@outlook.com</a></span>
+    <span>Software engineering · Michael Chen</span>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+
+</body>
 </html>

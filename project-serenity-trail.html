@@ -1,94 +1,247 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Serenity Trail | Michael Chen</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Serenity Trail Flask SQLite Docker GitHub Actions Tencent Cloud" name="keywords">
-        <meta content="Project detail page for Serenity Trail, a cloud-deployed Flask web app." name="description">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body class="detail-page">
-        <div class="detail-wrapper">
-            <header class="detail-topbar">
-                <div class="detail-brand">
-                    <div class="profile-avatar initials-avatar">MC</div>
-                    <div>
-                        <h1>Michael Chen</h1>
-                        <p>Software Engineering Student</p>
-                    </div>
-                </div>
-                <nav class="detail-nav" aria-label="Project navigation">
-                    <a href="index.html#home">Home</a>
-                    <a href="index.html#projects">Projects</a>
-                </nav>
-            </header>
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serenity Trail — Michael Chen</title>
+  <meta name="description" content="Serenity Trail brings four New Zealand walks to the web. A 2024 student team project; Michael Chen built the responsive Home, Trail, Contact and About interfaces.">
+  <meta name="theme-color" content="#07090c">
+  <link rel="canonical" href="https://michaelchen97.github.io/project-serenity-trail.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Michael Chen — Software Engineer">
+  <meta property="og:title" content="Serenity Trail — Michael Chen">
+  <meta property="og:description" content="Serenity Trail brings four New Zealand walks to the web. A 2024 student team project; Michael Chen built the responsive Home, Trail, Contact and About interfaces.">
+  <meta property="og:url" content="https://michaelchen97.github.io/project-serenity-trail.html">
+  <meta property="og:image" content="https://michaelchen97.github.io/assets/og/og-project-serenity-trail.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Serenity Trail — Michael Chen: preview image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://michaelchen97.github.io/assets/og/og-project-serenity-trail.jpg">
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Fraunces-Medium-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23eef2f6'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' text-anchor='middle' fill='%2307090c'%3EMC%3C/text%3E%3C/svg%3E">
+</head>
 
-            <main>
-                <section class="project-detail section-panel">
-                    <div class="content-inner">
-                        <div class="project-detail-header">
-                            <a class="back-link" href="index.html#projects"><i class="fa fa-arrow-left"></i>Back to Projects</a>
-                            <h2>Serenity Trail – Cloud-Deployed Web App</h2>
-                            <div class="tech-tags tag-row">
-                                <span>Flask</span>
-                                <span>SQLite</span>
-                                <span>Docker</span>
-                                <span>GitHub Actions</span>
-                                <span>Tencent Cloud</span>
-                            </div>
-                        </div>
+<body class="w-serenity">
+<noscript><style>@view-transition{navigation:none}</style></noscript>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">MC</span><span>Michael Chen</span><span class="sr-only">, home</span></a>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="./#work" data-nav="work" aria-current="true">Work</a>
+      <a href="./#toolbox" data-nav="toolbox">Toolbox</a>
+      <a href="./#about" data-nav="about">About</a>
+      <a href="./#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-sm header-cta" href="https://canva.link/l92zh4dfmt63nav" target="_blank" rel="noopener noreferrer">Résumé<span class="sr-only"> (opens in a new tab)</span></a>
+      <button class="btn btn-sm nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
 
-                        <div class="detail-meta-grid">
-                            <div class="detail-meta-card">
-                                <span>Time</span>
-                                <p>Apr 2024 – Jun 2024</p>
-                            </div>
-                            <div class="detail-meta-card">
-                                <span>Tech Stack</span>
-                                <p>Flask, SQLite, Docker, GitHub Actions, Tencent Cloud</p>
-                            </div>
-                            <div class="detail-meta-card">
-                                <span>Status</span>
-                                <p>Completed</p>
-                            </div>
-                        </div>
-
-                        <div class="detail-layout">
-                            <div class="detail-block">
-                                <h3>Project Overview</h3>
-                                <p>A cloud-deployed Flask web application with form submission functionality, protected admin access, CI/CD deployment, and custom domain configuration.</p>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>Key Features / Responsibilities</h3>
-                                <ul class="detail-list">
-                                    <li>Developed a Flask web application with form submission functionality and a login-protected admin page for viewing user-submitted contact information.</li>
-                                    <li>Integrated SQLite to store submitted form data and support data retrieval through the admin interface.</li>
-                                    <li>Built a Docker-based deployment setup and configured GitHub Actions CI/CD to deploy updates after commits and pushes to the remote main branch.</li>
-                                    <li>Deployed the application to Tencent Cloud and connected it to the registered custom domain serenitytrail.xyz.</li>
-                                    <li>Gained practical experience in cloud deployment, domain configuration, deployment records, and release troubleshooting.</li>
-                                </ul>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>Technical Implementation</h3>
-                                <p>The application packages a Flask and SQLite workflow in Docker, then uses GitHub Actions to automate deployment from the remote repository. The admin interface retrieves submitted records from SQLite behind protected access.</p>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>What I Learned</h3>
-                                <p>Cloud deployment workflow, Docker packaging, GitHub Actions CI/CD, SQLite data storage, domain configuration, and deployment troubleshooting.</p>
-                            </div>
-
-                            <div class="screenshot-placeholder">Screenshots / demo materials will be added later.</div>
-                        </div>
-                    </div>
-                </section>
-            </main>
+<main id="main">
+  <section class="case-hero w-serenity st-hero" aria-labelledby="st-title">
+    <div class="art w-serenity" aria-hidden="true"></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="./#more">Earlier work</a><span aria-hidden="true">/</span><span>Serenity Trail</span></nav>
+      <div class="st-head">
+        <p class="tag">Team project · 2024</p>
+        <h1 id="st-title">Serenity Trail</h1>
+      </div>
+      <div class="st-films" id="films">
+        <div class="st-intro">
+          <p class="lede">Four New Zealand walks, filmed by our student team. Explore gardens, forest, coast and wetland through the original trail films.</p>
+          <p class="st-role"><b>My role</b><span>The four responsive front-end pages</span></p>
+          <h2 class="st-list-h" id="h-films">Trail Films · Choose a destination</h2>
         </div>
-    </body>
+        <figure class="st-film is-cur" data-yt="WyimW5G14lA" data-title="Hamilton Gardens">
+          <div class="st-face"><img src="assets/media/serenity-trail/ST-V01_hamilton-gardens-1280.webp" srcset="assets/media/serenity-trail/ST-V01_hamilton-gardens-640.webp 640w, assets/media/serenity-trail/ST-V01_hamilton-gardens-960.webp 960w, assets/media/serenity-trail/ST-V01_hamilton-gardens-1280.webp 1280w" sizes="(min-width: 1180px) 1000px, calc(100vw - 32px)" width="1280" height="720" alt="Title card from the Serenity Trail film Hamilton Gardens: a formal garden with hedges, citrus trees in pots and long pools around a fountain, with the Serenity Trail logo and the place name overlaid" loading="eager" fetchpriority="high" decoding="async"><button class="st-play" type="button" data-pv-overlay-ok aria-label="Play Hamilton Gardens (29:37) from YouTube"><span class="st-play-i" aria-hidden="true"></span></button></div>
+          <figcaption class="st-cap"><h3 class="st-film-t">Hamilton Gardens</h3><p class="st-film-m">29:37 · Hamilton</p><div class="st-actions"><button class="st-start" type="button" aria-label="Play film: Hamilton Gardens (29:37) from YouTube"><span aria-hidden="true">▶</span> Play film</button><a class="st-cover" href="assets/media/serenity-trail/ST-V01_hamilton-gardens-1280.webp" data-zoom data-full="assets/media/serenity-trail/ST-V01_hamilton-gardens-1280.webp" data-caption="Hamilton Gardens · Original film cover" data-alt="Title card from the Serenity Trail film Hamilton Gardens: a formal garden with hedges, citrus trees in pots and long pools around a fountain, with the Serenity Trail logo and the place name overlaid" data-group="serenity-covers" aria-label="Enlarge cover: Hamilton Gardens video cover"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8.5 3.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0-1.5a6.5 6.5 0 0 1 5.2 10.4l3.8 3.8-1.1 1.1-3.8-3.8A6.5 6.5 0 1 1 8.5 2Z" fill="currentColor"/></svg><span class="st-cover-t">Enlarge cover</span></a><a class="st-yt" href="https://www.youtube.com/watch?v=WyimW5G14lA" target="_blank" rel="noopener">Watch on YouTube<span class="sr-only">: Hamilton Gardens (opens in a new tab)</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></div><p class="st-film-c">Formal gardens, long pools and quiet paths.</p></figcaption>
+        </figure>
+        <figure class="st-film" data-yt="8f3zY4rQz3g" data-title="Redwoods">
+          <div class="st-face"><img src="assets/media/serenity-trail/ST-V02_redwoods-640.webp" srcset="assets/media/serenity-trail/ST-V02_redwoods-640.webp 640w, assets/media/serenity-trail/ST-V02_redwoods-960.webp 960w, assets/media/serenity-trail/ST-V02_redwoods-1280.webp 1280w" sizes="(min-width: 1180px) 148px, (min-width: 600px) 31vw, calc(100vw - 32px)" width="1280" height="720" alt="Title card from the Serenity Trail film Redwoods: a walking track between redwood trunks and tree ferns, with the Serenity Trail logo and the place name “Redwoods Forest” overlaid" loading="lazy" decoding="async"><button class="st-play" type="button" data-pv-overlay-ok aria-label="Play Redwoods (23:42) from YouTube"><span class="st-play-i" aria-hidden="true"></span></button></div>
+          <figcaption class="st-cap"><h3 class="st-film-t">Redwoods</h3><p class="st-film-m">23:42 · Rotorua</p><div class="st-actions"><button class="st-start" type="button" aria-label="Play film: Redwoods (23:42) from YouTube"><span aria-hidden="true">▶</span> Play film</button><a class="st-cover" href="assets/media/serenity-trail/ST-V02_redwoods-1280.webp" data-zoom data-full="assets/media/serenity-trail/ST-V02_redwoods-1280.webp" data-caption="Redwoods · Original film cover" data-alt="Title card from the Serenity Trail film Redwoods: a walking track between redwood trunks and tree ferns, with the Serenity Trail logo and the place name “Redwoods Forest” overlaid" data-group="serenity-covers" aria-label="Enlarge cover: Redwoods video cover"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8.5 3.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0-1.5a6.5 6.5 0 0 1 5.2 10.4l3.8 3.8-1.1 1.1-3.8-3.8A6.5 6.5 0 1 1 8.5 2Z" fill="currentColor"/></svg><span class="st-cover-t">Enlarge cover</span></a><a class="st-yt" href="https://www.youtube.com/watch?v=8f3zY4rQz3g" target="_blank" rel="noopener">Watch on YouTube<span class="sr-only">: Redwoods (opens in a new tab)</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></div><p class="st-film-c">Follow a forest track beneath redwood trees.</p></figcaption>
+        </figure>
+        <figure class="st-film" data-yt="CMLAXaYK5qg" data-title="Tauranga Beach">
+          <div class="st-face"><img src="assets/media/serenity-trail/ST-V03_tauranga-beach-640.webp" srcset="assets/media/serenity-trail/ST-V03_tauranga-beach-640.webp 640w, assets/media/serenity-trail/ST-V03_tauranga-beach-960.webp 960w, assets/media/serenity-trail/ST-V03_tauranga-beach-1280.webp 1280w" sizes="(min-width: 1180px) 148px, (min-width: 600px) 31vw, calc(100vw - 32px)" width="1280" height="720" alt="Title card from the Serenity Trail film Tauranga Beach: sand and calm sea with a rocky, tree-covered headland on the horizon, with the Serenity Trail logo and the place name overlaid" loading="lazy" decoding="async"><button class="st-play" type="button" data-pv-overlay-ok aria-label="Play Tauranga Beach (21:13) from YouTube"><span class="st-play-i" aria-hidden="true"></span></button></div>
+          <figcaption class="st-cap"><h3 class="st-film-t">Tauranga Beach</h3><p class="st-film-m">21:13 · Tauranga</p><div class="st-actions"><button class="st-start" type="button" aria-label="Play film: Tauranga Beach (21:13) from YouTube"><span aria-hidden="true">▶</span> Play film</button><a class="st-cover" href="assets/media/serenity-trail/ST-V03_tauranga-beach-1280.webp" data-zoom data-full="assets/media/serenity-trail/ST-V03_tauranga-beach-1280.webp" data-caption="Tauranga Beach · Original film cover" data-alt="Title card from the Serenity Trail film Tauranga Beach: sand and calm sea with a rocky, tree-covered headland on the horizon, with the Serenity Trail logo and the place name overlaid" data-group="serenity-covers" aria-label="Enlarge cover: Tauranga Beach video cover"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8.5 3.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0-1.5a6.5 6.5 0 0 1 5.2 10.4l3.8 3.8-1.1 1.1-3.8-3.8A6.5 6.5 0 1 1 8.5 2Z" fill="currentColor"/></svg><span class="st-cover-t">Enlarge cover</span></a><a class="st-yt" href="https://www.youtube.com/watch?v=CMLAXaYK5qg" target="_blank" rel="noopener">Watch on YouTube<span class="sr-only">: Tauranga Beach (opens in a new tab)</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></div><p class="st-film-c">A coastal walk beside sand and open water.</p></figcaption>
+        </figure>
+        <figure class="st-film" data-yt="iu3TAET3KSE" data-title="Lake Ngaroto">
+          <div class="st-face"><img src="assets/media/serenity-trail/ST-V04_lake-ngaroto-640.webp" srcset="assets/media/serenity-trail/ST-V04_lake-ngaroto-640.webp 640w, assets/media/serenity-trail/ST-V04_lake-ngaroto-960.webp 960w, assets/media/serenity-trail/ST-V04_lake-ngaroto-1280.webp 1280w" sizes="(min-width: 1180px) 148px, (min-width: 600px) 31vw, calc(100vw - 32px)" width="1280" height="720" alt="Title card from the Serenity Trail film Lake Ngaroto: a boardwalk through wetland grass beside a fence line and standing water, with the Serenity Trail logo and the place name overlaid" loading="lazy" decoding="async"><button class="st-play" type="button" data-pv-overlay-ok aria-label="Play Lake Ngaroto (24:05) from YouTube"><span class="st-play-i" aria-hidden="true"></span></button></div>
+          <figcaption class="st-cap"><h3 class="st-film-t">Lake Ngaroto</h3><p class="st-film-m">24:05 · Waikato</p><div class="st-actions"><button class="st-start" type="button" aria-label="Play film: Lake Ngaroto (24:05) from YouTube"><span aria-hidden="true">▶</span> Play film</button><a class="st-cover" href="assets/media/serenity-trail/ST-V04_lake-ngaroto-1280.webp" data-zoom data-full="assets/media/serenity-trail/ST-V04_lake-ngaroto-1280.webp" data-caption="Lake Ngaroto · Original film cover" data-alt="Title card from the Serenity Trail film Lake Ngaroto: a boardwalk through wetland grass beside a fence line and standing water, with the Serenity Trail logo and the place name overlaid" data-group="serenity-covers" aria-label="Enlarge cover: Lake Ngaroto video cover"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8.5 3.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0-1.5a6.5 6.5 0 0 1 5.2 10.4l3.8 3.8-1.1 1.1-3.8-3.8A6.5 6.5 0 1 1 8.5 2Z" fill="currentColor"/></svg><span class="st-cover-t">Enlarge cover</span></a><a class="st-yt" href="https://www.youtube.com/watch?v=iu3TAET3KSE" target="_blank" rel="noopener">Watch on YouTube<span class="sr-only">: Lake Ngaroto (opens in a new tab)</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></div><p class="st-film-c">The boardwalk through the wetland at Lake Ngaroto.</p></figcaption>
+        </figure>
+        <div class="st-note"><p class="st-how">Original films by the Serenity Trail team. YouTube loads only when you press Play.</p></div>
+      </div>
+      <script>
+      (function () {
+        var box = document.getElementById('films');
+        if (!box || !box.querySelector) return;
+        var films = [].slice.call(box.querySelectorAll('.st-film'));
+        // the current film takes the large slot, so its cover gets the large sizes (the others the small ones)
+        var BIG = '(min-width: 1180px) 1000px, calc(100vw - 32px)', SMALL = '(min-width: 1180px) 148px, (min-width: 600px) 31vw, calc(100vw - 32px)';
+        function stop(f) { var fr = f.querySelector('iframe'); if (fr) fr.parentNode.removeChild(fr); f.classList.remove('is-playing'); }
+        function play(f) {
+          films.forEach(function (o) { if (o !== f) stop(o); o.classList.toggle('is-cur', o === f); var im = o.querySelector('.st-face img'); if (im) im.sizes = o === f ? BIG : SMALL; });
+          if (f.querySelector('iframe')) return;
+          var fr = document.createElement('iframe');
+          fr.className = 'st-frame';
+          fr.title = 'Serenity Trail: ' + f.getAttribute('data-title') + ' (YouTube video)';
+          fr.setAttribute('allow', 'autoplay; encrypted-media; fullscreen; picture-in-picture');
+          fr.setAttribute('allowfullscreen', '');
+          fr.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+          fr.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(f.getAttribute('data-yt')) + '?autoplay=1&rel=0&playsinline=1';
+          f.querySelector('.st-face').appendChild(fr);
+          f.classList.add('is-playing');
+          fr.focus();
+        }
+        box.addEventListener('click', function (e) {
+          var b = e.target.closest ? e.target.closest('.st-play, .st-start') : null;
+          if (b) play(b.closest('.st-film'));
+        });
+      })();
+      </script>
+      <dl class="facts">
+        <div><dt>Project</dt><dd>Student team · 2024</dd></div>
+        <div><dt>My contribution</dt><dd>Responsive front-end development</dd></div>
+        <div><dt>My tools</dt><dd>HTML · CSS · JavaScript · Jinja</dd></div>
+      </dl>
+    </div>
+  </section>
+  <div class="wrap case-layout st-case">
+    <nav class="toc" aria-label="On this page"><a href="#films">Trail Films</a><a href="#screens">Website Experience</a><a href="#built">Engineering &amp; My Contribution</a></nav>
+    <div>
+      <section class="chapter st-website" id="screens" aria-labelledby="h-screens">
+        <p class="kicker"><span class="n">01</span> Website Experience</p><h2 id="h-screens">The website we built.</h2>
+        <div class="prose" id="what"><p>Four connected pages brought the trail films, project story and contact experience together, with layouts that adapt from desktop to phone.</p></div>
+        <p class="st-reconstruction-label">Local reconstruction from the original 2024 source.</p>
+        <p class="st-web-note">Personal details are demonstration replacements. Scenery uses authorized frames from the team’s films.</p>
+        <article class="st-web-page"><div class="st-web-title"><h3>Home</h3><p>A slideshow, a welcome and four destinations.</p></div><div class="st-web-pair"><div class="st-web-desktop"><figure data-deferred-fig class="fig">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R01_home-desktop-3354.webp" data-caption="Home · Desktop" data-alt="Home page with original navigation, scenic slideshow and Serenity Trail heading. Local reconstruction from the original 2024 source." aria-label="Enlarge: Home page with original navigation, scenic slideshow and Serenity Trail heading. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R01_home-desktop-1280.webp" data-defer-srcset="assets/media/serenity-trail/ST-R01_home-desktop-960.webp 960w, assets/media/serenity-trail/ST-R01_home-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R01_home-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="Home page with original navigation, scenic slideshow and Serenity Trail heading. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R01_home-desktop-3354.webp" aria-label="Enlarge: Home page with original navigation, scenic slideshow and Serenity Trail heading. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R01_home-desktop-1280.webp" srcset="assets/media/serenity-trail/ST-R01_home-desktop-960.webp 960w, assets/media/serenity-trail/ST-R01_home-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R01_home-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="Home page with original navigation, scenic slideshow and Serenity Trail heading. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>Home · Desktop</span></figcaption>
+</figure></div><div class="st-web-phone"><figure data-deferred-fig class="fig portrait">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R02_home-mobile-1170.webp" data-caption="Home · Phone" data-alt="Home page on a phone, showing the original responsive layout. Local reconstruction from the original 2024 source." aria-label="Enlarge: Home page on a phone, showing the original responsive layout. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R02_home-mobile-1170.webp" data-defer-srcset="assets/media/serenity-trail/ST-R02_home-mobile-390.webp 390w, assets/media/serenity-trail/ST-R02_home-mobile-780.webp 780w, assets/media/serenity-trail/ST-R02_home-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Home page on a phone, showing the original responsive layout. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R02_home-mobile-1170.webp" aria-label="Enlarge: Home page on a phone, showing the original responsive layout. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R02_home-mobile-1170.webp" srcset="assets/media/serenity-trail/ST-R02_home-mobile-390.webp 390w, assets/media/serenity-trail/ST-R02_home-mobile-780.webp 780w, assets/media/serenity-trail/ST-R02_home-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Home page on a phone, showing the original responsive layout. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>Home · Phone</span></figcaption>
+</figure></div></div></article>
+        <article class="st-web-page"><div class="st-web-title"><h3>Trail</h3><p>Four films, integrated into the page.</p></div><div class="st-web-pair"><div class="st-web-desktop"><figure data-deferred-fig class="fig">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R03_trail-desktop-3354.webp" data-caption="Trail · Desktop" data-alt="Trail page with the original alternating video and description layout and an authentic authorized film playing. Local reconstruction from the original 2024 source." aria-label="Enlarge: Trail page with the original alternating video and description layout and an authentic authorized film playing. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R03_trail-desktop-1280.webp" data-defer-srcset="assets/media/serenity-trail/ST-R03_trail-desktop-960.webp 960w, assets/media/serenity-trail/ST-R03_trail-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R03_trail-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="Trail page with the original alternating video and description layout and an authentic authorized film playing. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R03_trail-desktop-3354.webp" aria-label="Enlarge: Trail page with the original alternating video and description layout and an authentic authorized film playing. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R03_trail-desktop-1280.webp" srcset="assets/media/serenity-trail/ST-R03_trail-desktop-960.webp 960w, assets/media/serenity-trail/ST-R03_trail-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R03_trail-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="Trail page with the original alternating video and description layout and an authentic authorized film playing. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>Trail · Desktop</span></figcaption>
+</figure></div><div class="st-web-phone"><figure data-deferred-fig class="fig portrait">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R04_trail-mobile-1170.webp" data-caption="Trail · Phone" data-alt="Trail film and description stacked in the original phone layout. Local reconstruction from the original 2024 source." aria-label="Enlarge: Trail film and description stacked in the original phone layout. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R04_trail-mobile-1170.webp" data-defer-srcset="assets/media/serenity-trail/ST-R04_trail-mobile-390.webp 390w, assets/media/serenity-trail/ST-R04_trail-mobile-780.webp 780w, assets/media/serenity-trail/ST-R04_trail-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Trail film and description stacked in the original phone layout. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R04_trail-mobile-1170.webp" aria-label="Enlarge: Trail film and description stacked in the original phone layout. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R04_trail-mobile-1170.webp" srcset="assets/media/serenity-trail/ST-R04_trail-mobile-390.webp 390w, assets/media/serenity-trail/ST-R04_trail-mobile-780.webp 780w, assets/media/serenity-trail/ST-R04_trail-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Trail film and description stacked in the original phone layout. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>Trail · Phone</span></figcaption>
+</figure></div></div></article>
+        <article class="st-web-page"><div class="st-web-title"><h3>About Us</h3><p>The project vision and interactive team cards.</p></div><div class="st-web-pair"><div class="st-web-desktop"><figure data-deferred-fig class="fig">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R05_about-desktop-3354.webp" data-caption="About Us · Desktop" data-alt="About page team-card layout, with neutral identities and portraits protecting personal information. Local reconstruction from the original 2024 source." aria-label="Enlarge: About page team-card layout, with neutral identities and portraits protecting personal information. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R05_about-desktop-1280.webp" data-defer-srcset="assets/media/serenity-trail/ST-R05_about-desktop-960.webp 960w, assets/media/serenity-trail/ST-R05_about-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R05_about-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="About page team-card layout, with neutral identities and portraits protecting personal information. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R05_about-desktop-3354.webp" aria-label="Enlarge: About page team-card layout, with neutral identities and portraits protecting personal information. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R05_about-desktop-1280.webp" srcset="assets/media/serenity-trail/ST-R05_about-desktop-960.webp 960w, assets/media/serenity-trail/ST-R05_about-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R05_about-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="About page team-card layout, with neutral identities and portraits protecting personal information. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>About Us · Desktop</span></figcaption>
+</figure></div><div class="st-web-phone"><figure data-deferred-fig class="fig portrait">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R06_about-mobile-1170.webp" data-caption="About Us · Phone" data-alt="Responsive About team card with a neutral portrait and original role structure. Local reconstruction from the original 2024 source." aria-label="Enlarge: Responsive About team card with a neutral portrait and original role structure. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R06_about-mobile-1170.webp" data-defer-srcset="assets/media/serenity-trail/ST-R06_about-mobile-390.webp 390w, assets/media/serenity-trail/ST-R06_about-mobile-780.webp 780w, assets/media/serenity-trail/ST-R06_about-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Responsive About team card with a neutral portrait and original role structure. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R06_about-mobile-1170.webp" aria-label="Enlarge: Responsive About team card with a neutral portrait and original role structure. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R06_about-mobile-1170.webp" srcset="assets/media/serenity-trail/ST-R06_about-mobile-390.webp 390w, assets/media/serenity-trail/ST-R06_about-mobile-780.webp 780w, assets/media/serenity-trail/ST-R06_about-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Responsive About team card with a neutral portrait and original role structure. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>About Us · Phone</span></figcaption>
+</figure></div></div></article>
+        <article class="st-web-page"><div class="st-web-title"><h3>Contact</h3><p>Contact cards, feedback and a useful map.</p></div><div class="st-web-pair"><div class="st-web-desktop"><figure data-deferred-fig class="fig">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R07_contact-desktop-3354.webp" data-caption="Contact · Desktop" data-alt="Contact page with clearly fictional contact details and the original Message Us form layout. Local reconstruction from the original 2024 source." aria-label="Enlarge: Contact page with clearly fictional contact details and the original Message Us form layout. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R07_contact-desktop-1280.webp" data-defer-srcset="assets/media/serenity-trail/ST-R07_contact-desktop-960.webp 960w, assets/media/serenity-trail/ST-R07_contact-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R07_contact-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="Contact page with clearly fictional contact details and the original Message Us form layout. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R07_contact-desktop-3354.webp" aria-label="Enlarge: Contact page with clearly fictional contact details and the original Message Us form layout. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R07_contact-desktop-1280.webp" srcset="assets/media/serenity-trail/ST-R07_contact-desktop-960.webp 960w, assets/media/serenity-trail/ST-R07_contact-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R07_contact-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="Contact page with clearly fictional contact details and the original Message Us form layout. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>Contact · Desktop</span></figcaption>
+</figure></div><div class="st-web-phone"><figure data-deferred-fig class="fig portrait">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R08_contact-mobile-1170.webp" data-caption="Contact · Phone" data-alt="Original Contact form on a phone, with fictional demonstration information. Local reconstruction from the original 2024 source." aria-label="Enlarge: Original Contact form on a phone, with fictional demonstration information. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R08_contact-mobile-1170.webp" data-defer-srcset="assets/media/serenity-trail/ST-R08_contact-mobile-390.webp 390w, assets/media/serenity-trail/ST-R08_contact-mobile-780.webp 780w, assets/media/serenity-trail/ST-R08_contact-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Original Contact form on a phone, with fictional demonstration information. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R08_contact-mobile-1170.webp" aria-label="Enlarge: Original Contact form on a phone, with fictional demonstration information. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R08_contact-mobile-1170.webp" srcset="assets/media/serenity-trail/ST-R08_contact-mobile-390.webp 390w, assets/media/serenity-trail/ST-R08_contact-mobile-780.webp 780w, assets/media/serenity-trail/ST-R08_contact-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Original Contact form on a phone, with fictional demonstration information. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>Contact · Phone</span></figcaption>
+</figure></div></div></article>
+        <div class="st-web-details"><div><figure data-deferred-fig class="fig">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R09_map-desktop-3354.webp" data-caption="A current keyless map in the original Contact page’s map area." data-alt="The original Contact page layout with a current Google Maps view of the authorized Hamilton demo location. Local reconstruction from the original 2024 source." aria-label="Enlarge: The original Contact page layout with a current Google Maps view of the authorized Hamilton demo location. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R09_map-desktop-1280.webp" data-defer-srcset="assets/media/serenity-trail/ST-R09_map-desktop-960.webp 960w, assets/media/serenity-trail/ST-R09_map-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R09_map-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="The original Contact page layout with a current Google Maps view of the authorized Hamilton demo location. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R09_map-desktop-3354.webp" aria-label="Enlarge: The original Contact page layout with a current Google Maps view of the authorized Hamilton demo location. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R09_map-desktop-1280.webp" srcset="assets/media/serenity-trail/ST-R09_map-desktop-960.webp 960w, assets/media/serenity-trail/ST-R09_map-desktop-1280.webp 1280w, assets/media/serenity-trail/ST-R09_map-desktop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3354" height="1854" loading="lazy" decoding="async" alt="The original Contact page layout with a current Google Maps view of the authorized Hamilton demo location. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>A current keyless map in the original Contact page’s map area.</span></figcaption>
+</figure></div><div class="st-web-phone"><figure data-deferred-fig class="fig portrait">
+  <button class="shot" type="button" data-zoom data-group="st-website" data-full="assets/media/serenity-trail/ST-R10_nav-mobile-1170.webp" data-caption="The original mobile navigation." data-alt="Serenity Trail mobile menu showing Home, Trail, About Us and Contact. Local reconstruction from the original 2024 source." aria-label="Enlarge: Serenity Trail mobile menu showing Home, Trail, About Us and Contact. Local reconstruction from the original 2024 source.">
+    <picture class="st-deferred-picture"><img data-defer-src="assets/media/serenity-trail/ST-R10_nav-mobile-1170.webp" data-defer-srcset="assets/media/serenity-trail/ST-R10_nav-mobile-390.webp 390w, assets/media/serenity-trail/ST-R10_nav-mobile-780.webp 780w, assets/media/serenity-trail/ST-R10_nav-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Serenity Trail mobile menu showing Home, Trail, About Us and Contact. Local reconstruction from the original 2024 source."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button><noscript><a class="shot" href="assets/media/serenity-trail/ST-R10_nav-mobile-1170.webp" aria-label="Enlarge: Serenity Trail mobile menu showing Home, Trail, About Us and Contact. Local reconstruction from the original 2024 source."><picture><img src="assets/media/serenity-trail/ST-R10_nav-mobile-1170.webp" srcset="assets/media/serenity-trail/ST-R10_nav-mobile-390.webp 390w, assets/media/serenity-trail/ST-R10_nav-mobile-780.webp 780w, assets/media/serenity-trail/ST-R10_nav-mobile-1170.webp 1170w" sizes="(max-width: 760px) 330px, 240px" width="1170" height="2532" loading="lazy" decoding="async" alt="Serenity Trail mobile menu showing Home, Trail, About Us and Contact. Local reconstruction from the original 2024 source."></picture></a></noscript>
+  <figcaption><span>The original mobile navigation.</span></figcaption>
+</figure></div></div>
+      </section>
+      <script>
+      (function () {
+        var images = document.querySelectorAll('#screens [data-defer-src]');
+        function load(image) {
+          var picture = image.closest('picture');
+          if (picture) picture.querySelectorAll('[data-defer-srcset]').forEach(function (e) { e.srcset = e.getAttribute('data-defer-srcset'); e.removeAttribute('data-defer-srcset'); });
+          image.src = image.getAttribute('data-defer-src'); image.removeAttribute('data-defer-src');
+        }
+        if (!('IntersectionObserver' in window)) { images.forEach(load); return; }
+        var observer = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { load(e.target); observer.unobserve(e.target); } }); }, { rootMargin: '450px 0px' });
+        images.forEach(function (image) { observer.observe(image); });
+      })();
+      </script>
+      <section class="chapter" id="built" aria-labelledby="h-built">
+        <p class="kicker"><span class="n">02</span> Engineering &amp; My Contribution</p><h2 id="h-built">Connecting the front end to the team’s services.</h2>
+        <div class="prose"><p>I built the page layouts, styling and responsive navigation, and integrated the front end with the team’s Flask templates.</p></div>
+        <div class="st-build-grid">
+          <article><span class="st-page-n" aria-hidden="true">01</span><h3>Home</h3><p>A photo slideshow and four destination tiles, each leading straight to its trail film.</p></article>
+          <article><span class="st-page-n" aria-hidden="true">02</span><h3>Trail</h3><p>A film gallery with alternating video and description layouts that stack naturally on phones.</p></article>
+          <article><span class="st-page-n" aria-hidden="true">03</span><h3>Contact</h3><p>Location and contact cards, the Message Us form layout and a dedicated map section.</p></article>
+          <article><span class="st-page-n" aria-hidden="true">04</span><h3>About</h3><p>The project’s vision and interactive team cards that reveal each person’s role.</p></article>
+        </div>
+        <p class="st-team-note">Teammates built the initial static draft, backend, form submission, map integration and deployment. I also integrated the team’s pull requests.</p>
+        <a class="st-location" href="https://www.google.com/maps/search/?api=1&amp;query=-37.7870%2C175.2793" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M26 13c0 8-10 16-10 16S6 21 6 13a10 10 0 0 1 20 0Z"/><circle cx="16" cy="13" r="3.5"/></svg><span><span class="st-location-k">School project demo location</span><strong>Hamilton, New Zealand</strong><span class="st-location-link">Open in Google Maps <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></span></span></a>
+      <div class="st-engineering-detail" id="architecture" aria-labelledby="h-architecture">
+        <h3 id="h-architecture">A simple front end, backed by Flask.</h3>
+        <div class="prose"><p>Jinja templates connected the four pages to the team’s Flask app. Contact messages were stored in SQLite through SQLAlchemy, with a separate admin view. The team handled Docker and deployment through GitHub Actions.</p></div>
+        <div class="st-archive-note"><p>The original 2024 site is archived. The films above are the team’s original published videos.</p></div>
+        <details class="st-history"><summary>View the project architecture</summary><div class="figs">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="st" data-full="assets/media/serenity-trail/ST-A01_architecture-3200.webp" data-caption="My front-end pages are highlighted in amber; the team’s server, database and delivery services are grey." data-alt="Serenity Trail architecture: four front-end pages connect to Flask, SQLite and an admin view. The delivery workflow uses Docker and GitHub Actions." aria-label="Enlarge: Serenity Trail architecture: four front-end pages connect to Flask, SQLite and an admin view. The delivery workflow uses Docker and GitHub Actions.">
+    <picture><img src="assets/media/serenity-trail/ST-A01_architecture-1280.webp" srcset="assets/media/serenity-trail/ST-A01_architecture-1280.webp 1280w, assets/media/serenity-trail/ST-A01_architecture-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3200" height="2000" loading="lazy" decoding="async" alt="Serenity Trail architecture: four front-end pages connect to Flask, SQLite and an admin view. The delivery workflow uses Docker and GitHub Actions."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>My front-end pages are highlighted in amber; the team’s server, database and delivery services are grey.</span></figcaption>
+</figure>
+        </div></details>
+      </div>
+      <div class="st-engineering-detail" id="looking-back" aria-labelledby="h-looking-back">
+        <h3 id="h-looking-back">Making the handoff between pages and services work.</h3>
+        <div class="prose"><p>This project taught me to give backend teammates predictable markup and clear interaction points. Reusable navigation, direct links to each film and layouts that adapt to small screens made the four pages feel connected.</p><p>I would build on that with tested colour contrast, keyboard navigation and media that loads on demand, as the films do in this case study.</p></div>
+      </div>
+      </section>
+      <section class="chapter" aria-label="Next project">
+        <a class="next w-cfit" href="project-cfit.html"><span class="art w-cfit" aria-hidden="true"></span><span><span class="eyebrow">Back to the flagship</span><br><span class="t">CFIT Timetable System</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Michael Chen · <a href="mailto:michael16585@outlook.com" data-email>michael16585@outlook.com</a></span>
+    <span>Software engineering · Michael Chen</span>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+
+</body>
 </html>

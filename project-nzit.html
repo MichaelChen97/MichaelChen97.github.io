@@ -1,93 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>NZIT Mock School Website | Michael Chen</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="NZIT PHP MySQL Bootstrap XAMPP school website" name="keywords">
-        <meta content="Project detail page for the NZIT Mock School Website." name="description">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body class="detail-page">
-        <div class="detail-wrapper">
-            <header class="detail-topbar">
-                <div class="detail-brand">
-                    <div class="profile-avatar initials-avatar">MC</div>
-                    <div>
-                        <h1>Michael Chen</h1>
-                        <p>Software Engineering Student</p>
-                    </div>
-                </div>
-                <nav class="detail-nav" aria-label="Project navigation">
-                    <a href="index.html#home">Home</a>
-                    <a href="index.html#projects">Projects</a>
-                </nav>
-            </header>
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NZIT Mock School Website — Michael Chen</title>
+  <meta name="description" content="Team coursework: a PHP and MySQL school website with validated contact and feedback forms.">
+  <meta name="theme-color" content="#07090c">
+  <link rel="canonical" href="https://michaelchen97.github.io/project-nzit.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Michael Chen — Software Engineer">
+  <meta property="og:title" content="NZIT Mock School Website — Michael Chen">
+  <meta property="og:description" content="Team coursework: a PHP and MySQL school website with validated contact and feedback forms.">
+  <meta property="og:url" content="https://michaelchen97.github.io/project-nzit.html">
+  <meta property="og:image" content="https://michaelchen97.github.io/assets/og/og-project-nzit.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NZIT Mock School Website — Michael Chen: preview image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://michaelchen97.github.io/assets/og/og-project-nzit.jpg">
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23eef2f6'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' text-anchor='middle' fill='%2307090c'%3EMC%3C/text%3E%3C/svg%3E">
+</head>
 
-            <main>
-                <section class="project-detail section-panel">
-                    <div class="content-inner">
-                        <div class="project-detail-header">
-                            <a class="back-link" href="index.html#projects"><i class="fa fa-arrow-left"></i>Back to Projects</a>
-                            <h2>NZIT Mock School Website</h2>
-                            <div class="tech-tags tag-row">
-                                <span>PHP</span>
-                                <span>MySQL</span>
-                                <span>Bootstrap</span>
-                                <span>XAMPP</span>
-                            </div>
-                        </div>
+<body class="w-archive">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">MC</span><span>Michael Chen</span><span class="sr-only">, home</span></a>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="./#work" data-nav="work" aria-current="true">Work</a>
+      <a href="./#toolbox" data-nav="toolbox">Toolbox</a>
+      <a href="./#about" data-nav="about">About</a>
+      <a href="./#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-sm header-cta" href="https://canva.link/l92zh4dfmt63nav" target="_blank" rel="noopener noreferrer">Résumé<span class="sr-only"> (opens in a new tab)</span></a>
+      <button class="btn btn-sm nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
 
-                        <div class="detail-meta-grid">
-                            <div class="detail-meta-card">
-                                <span>Time</span>
-                                <p>Apr 2025 – Jun 2025</p>
-                            </div>
-                            <div class="detail-meta-card">
-                                <span>Tech Stack</span>
-                                <p>PHP, MySQL, Bootstrap, XAMPP</p>
-                            </div>
-                            <div class="detail-meta-card">
-                                <span>Status</span>
-                                <p>Completed</p>
-                            </div>
-                        </div>
-
-                        <div class="detail-layout">
-                            <div class="detail-block">
-                                <h3>Project Overview</h3>
-                                <p>A mock school website with dynamic contact and feedback modules using PHP, MySQL, Bootstrap, and local XAMPP deployment.</p>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>Key Features / Responsibilities</h3>
-                                <ul class="detail-list">
-                                    <li>Developed a mock school website with dynamic contact and feedback modules using PHP, MySQL, and Bootstrap.</li>
-                                    <li>Implemented dual-layer validation using PHP-side checks and database constraints to improve form reliability.</li>
-                                    <li>Built secure form-handling logic to reduce invalid submissions and support structured data storage.</li>
-                                    <li>Worked in a team environment to develop, test, and refine the website interface and backend form functionality.</li>
-                                    <li>Gained practical experience in traditional full-stack web development using PHP, MySQL, and local XAMPP deployment.</li>
-                                </ul>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>Technical Implementation</h3>
-                                <p>The website uses PHP for form handling and server-side validation, MySQL for structured storage, Bootstrap for responsive layout, and XAMPP for local development and testing.</p>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>What I Learned</h3>
-                                <p>Traditional full-stack PHP/MySQL development, form handling, validation, database constraints, Bootstrap layout, XAMPP local development, and team-based implementation.</p>
-                            </div>
-
-                            <div class="screenshot-placeholder">Screenshots / demo materials will be added later.</div>
-                        </div>
-                    </div>
-                </section>
-            </main>
+<main id="main">
+  <section class="case-hero w-archive">
+    <div class="art w-archive" aria-hidden="true"></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="./#more">Earlier work</a><span aria-hidden="true">/</span><span>NZIT Mock School Website</span></nav>
+      <div class="ch-grid solo">
+        <div class="ch-copy">
+          <p class="tag">Team coursework · archive</p>
+          <h1>NZIT Mock School Website</h1>
+          <p class="lede">A mock school website with contact and feedback forms, built by a student team with PHP, MySQL and Bootstrap.</p>
         </div>
-    </body>
+        <dl class="facts">
+        <div><dt>When</dt><dd>April – June 2025</dd></div>
+        <div><dt>Stack</dt><dd>PHP · MySQL · Bootstrap · XAMPP</dd></div>
+        <div><dt>Team</dt><dd>Student team project</dd></div>
+      </dl>
+      </div>
+    </div>
+  </section>
+  <div class="wrap">
+    <section class="chapter" aria-labelledby="h-what">
+      <p class="kicker"><span class="n">01</span> What it does</p>
+      <h2 id="h-what">Forms that reject bad input twice.</h2>
+      <div class="prose">
+        <ul>
+          <li>Contact and feedback modules that store submissions in MySQL.</li>
+          <li>Two layers of validation: checks in PHP and constraints in the database.</li>
+          <li>A responsive Bootstrap layout, developed and tested locally with XAMPP.</li>
+        </ul>
+        <p class="note">Coursework archive, described from my project records.</p>
+      </div>
+    </section>
+    <section class="chapter" aria-label="Next project">
+      <a class="next w-cfit" href="project-cfit.html"><span class="art w-cfit" aria-hidden="true"></span><span><span class="eyebrow">Back to the flagship</span><br><span class="t">CFIT Timetable System</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Michael Chen · <a href="mailto:michael16585@outlook.com" data-email>michael16585@outlook.com</a></span>
+    <span>Software engineering · Michael Chen</span>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+
+</body>
 </html>

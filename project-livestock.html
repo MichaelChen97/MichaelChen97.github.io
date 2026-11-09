@@ -1,94 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Livestock Management App | Michael Chen</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Livestock Management .NET MAUI C# XAML MVVM SQLite" name="keywords">
-        <meta content="Project detail page for the Livestock Management App." name="description">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body class="detail-page">
-        <div class="detail-wrapper">
-            <header class="detail-topbar">
-                <div class="detail-brand">
-                    <div class="profile-avatar initials-avatar">MC</div>
-                    <div>
-                        <h1>Michael Chen</h1>
-                        <p>Software Engineering Student</p>
-                    </div>
-                </div>
-                <nav class="detail-nav" aria-label="Project navigation">
-                    <a href="index.html#home">Home</a>
-                    <a href="index.html#projects">Projects</a>
-                </nav>
-            </header>
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Livestock Management — Michael Chen</title>
+  <meta name="description" content="Livestock Management: a .NET 9 MAUI desktop app for a farm’s cows and sheep, with live profit calculations, LINQ queries and Microcharts dashboards over SQLite. Sole author: Michael Chen.">
+  <meta name="theme-color" content="#07090c">
+  <link rel="canonical" href="https://michaelchen97.github.io/project-livestock.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Michael Chen — Software Engineer">
+  <meta property="og:title" content="Livestock Management — Michael Chen">
+  <meta property="og:description" content="Livestock Management: a .NET 9 MAUI desktop app for a farm’s cows and sheep, with live profit calculations, LINQ queries and Microcharts dashboards over SQLite. Sole author: Michael Chen.">
+  <meta property="og:url" content="https://michaelchen97.github.io/project-livestock.html">
+  <meta property="og:image" content="https://michaelchen97.github.io/assets/og/og-project-livestock.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Livestock Management — Michael Chen: preview image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://michaelchen97.github.io/assets/og/og-project-livestock.jpg">
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Syne-Bold-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" as="image" href="assets/media/livestock/LS-F02_edit_poster_960.webp" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23eef2f6'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' text-anchor='middle' fill='%2307090c'%3EMC%3C/text%3E%3C/svg%3E">
+</head>
 
-            <main>
-                <section class="project-detail section-panel">
-                    <div class="content-inner">
-                        <div class="project-detail-header">
-                            <a class="back-link" href="index.html#projects"><i class="fa fa-arrow-left"></i>Back to Projects</a>
-                            <h2>Livestock Management App</h2>
-                            <div class="tech-tags tag-row">
-                                <span>.NET MAUI</span>
-                                <span>C#</span>
-                                <span>XAML</span>
-                                <span>MVVM</span>
-                                <span>SQLite</span>
-                            </div>
-                        </div>
+<body class="w-livestock">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">MC</span><span>Michael Chen</span><span class="sr-only">, home</span></a>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="./#work" data-nav="work" aria-current="true">Work</a>
+      <a href="./#toolbox" data-nav="toolbox">Toolbox</a>
+      <a href="./#about" data-nav="about">About</a>
+      <a href="./#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-sm header-cta" href="https://canva.link/l92zh4dfmt63nav" target="_blank" rel="noopener noreferrer">Résumé<span class="sr-only"> (opens in a new tab)</span></a>
+      <button class="btn btn-sm nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
 
-                        <div class="detail-meta-grid">
-                            <div class="detail-meta-card">
-                                <span>Time</span>
-                                <p>Sep 2025 – Nov 2025</p>
-                            </div>
-                            <div class="detail-meta-card">
-                                <span>Tech Stack</span>
-                                <p>.NET MAUI, C#, XAML, MVVM, SQLite</p>
-                            </div>
-                            <div class="detail-meta-card">
-                                <span>Status</span>
-                                <p>Completed</p>
-                            </div>
-                        </div>
-
-                        <div class="detail-layout">
-                            <div class="detail-block">
-                                <h3>Project Overview</h3>
-                                <p>A cross-platform livestock management app for managing cow and sheep records, calculations, filtering, sorting, and dashboard analysis.</p>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>Key Features / Responsibilities</h3>
-                                <ul class="detail-list">
-                                    <li>Built a cross-platform livestock management app using MVVM, local SQLite storage, and repository/service layers for CRUD, search, filtering, and sorting of cow and sheep records.</li>
-                                    <li>Implemented calculation logic for income, tax, cost, profit, average weight, and profit forecasting.</li>
-                                    <li>Developed dashboard and analysis features with chart visualisations using Microcharts and SkiaSharp.</li>
-                                    <li>Structured the app with models, views, view models, services, and repositories to improve separation of concerns and maintainability.</li>
-                                    <li>Used local seed data and SQLite database handling to simulate a practical data-driven mobile/desktop application.</li>
-                                </ul>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>Technical Implementation</h3>
-                                <p>The app separates UI, view models, services, repositories, and SQLite storage. Data operations run through repository/service layers, while dashboard calculations and chart visualisations summarise livestock records for practical analysis.</p>
-                            </div>
-
-                            <div class="detail-block">
-                                <h3>What I Learned</h3>
-                                <p>Cross-platform app structure, MVVM, local SQLite storage, repository/service patterns, data calculations, and dashboard visualisation.</p>
-                            </div>
-
-                            <div class="screenshot-placeholder">Screenshots / demo materials will be added later.</div>
-                        </div>
-                    </div>
-                </section>
-            </main>
+<main id="main">
+  <section class="case-hero w-livestock">
+    <div class="art w-livestock" aria-hidden="true"></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="./#livestock">Work</a><span aria-hidden="true">/</span><span>Livestock Management</span></nav>
+      <div class="ch-grid wide">
+        <div class="ch-copy">
+          <p class="tag">.NET MAUI · sole author</p>
+          <h1>The farm maths, done for you.</h1>
+          <p class="lede">A desktop app for a farm’s cows and sheep. It keeps the records, previews income and profit as you type, works out each animal’s cost and the farm’s tax, and answers questions like “which animals earn the most?” with queries and charts.</p>
+          <p class="role"><b>My role</b><span>Sole developer · C# and .NET MAUI</span></p>
         </div>
-    </body>
+        <div class="ch-media">
+          <div class="hide-sm"><figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    
+    <video data-mode="once" data-src="assets/media/livestock/LS-F02_edit_h264_1920x1080p60.mp4" data-src-sm="assets/media/livestock/LS-F02_edit_h264_1280x720p60.mp4" data-heavy poster="assets/media/livestock/LS-F02_edit_poster_960.webp" data-poster-lg="assets/media/livestock/LS-F02_edit_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Livestock Management: a new cow is added, saved, and the dashboard updates"></video>
+  </div>
+  <figcaption><span>Add a cow, save it, forecast and watch the dashboard change: the real workflow in 13 seconds.</span><span class="tag">Edited app walkthrough</span></figcaption>
+</figure></div>
+          <div class="show-sm"><figure class="fig fig-video narrow">
+  <div class="frame" style="--ar:860/848">
+    <noscript><a class="nojs" href="assets/media/livestock/LS-L02c_add-form-crop_h264_860x848p60.mp4"><img src="assets/media/livestock/LS-L02c_add-form-crop_poster_860.webp" width="860" height="848" alt="Livestock add form: income and profit update live as milk is typed (opens the video)"></a></noscript>
+    <video data-mode="once" data-src="assets/media/livestock/LS-L02c_add-form-crop_h264_860x848p60.mp4" data-src-sm="assets/media/livestock/LS-L02c_add-form-crop_h264_640x632p60.mp4" data-poster="assets/media/livestock/LS-L02c_add-form-crop_poster_860.webp" width="860" height="848" preload="none" muted playsinline aria-label="Livestock add form: income and profit update live as milk is typed"></video>
+  </div>
+  <figcaption><span>The Add form: income and profit update while milk is typed.</span><span class="tag">Application recording</span></figcaption>
+</figure></div>
+        </div>
+        <dl class="facts">
+        <div><dt>Stack</dt><dd>C# · .NET 9 MAUI · XAML · SQLite</dd></div>
+        <div><dt>Libraries</dt><dd>CommunityToolkit.Mvvm · Microcharts · SkiaSharp · sqlite-net</dd></div>
+        <div><dt>When</dt><dd>September – November 2025</dd></div>
+      </dl>
+      </div>
+    </div>
+  </section>
+  <div class="wrap case-layout">
+    <nav class="toc" aria-label="On this page"><a href="#what">What it does</a><a href="#walkthrough">Walkthrough</a><a href="#engineering">How it is built</a><a href="#testing">Calculations</a></nav>
+    <div>
+      <section class="chapter" id="what" aria-labelledby="h-what">
+        <p class="kicker"><span class="n">01</span> What it does</p>
+        <h2 id="h-what">Records, calculations, questions.</h2>
+        <div class="prose">
+          <ul>
+            <li>Add, update and delete cows and sheep with their expense, weight, colour and milk or wool output.</li>
+            <li>The Add form previews income and profit as you type; cost per animal and the government tax totals appear on the Dashboard, Analysis and Query screens.</li>
+            <li>Query by type and colour, sort by profit, and forecast what buying more animals would earn.</li>
+            <li>A dashboard of Microcharts charts that summarise the whole farm.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="chapter feature" id="walkthrough" aria-labelledby="h-walkthrough">
+        <p class="kicker"><span class="n">02</span> Walkthrough</p>
+        <h2 id="h-walkthrough">The running app.</h2>
+        <div class="prose"><p>The running .NET MAUI application, using sample livestock records.</p></div>
+        <h3>The dashboard</h3>
+        <div class="figs">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="ls" data-full="assets/media/livestock/LS-S01c-3840.webp" data-caption="The dashboard: livestock count, colour distribution, profit trend and top cost per animal, all drawn from the SQLite data." data-alt="The dashboard: livestock count, colour distribution, profit trend and top cost per animal, all drawn from the SQLite data." aria-label="Enlarge: The dashboard: livestock count, colour distribution, profit trend and top cost per animal, all drawn from the SQLite data.">
+    <picture><img src="assets/media/livestock/LS-S01c-1280.webp" srcset="assets/media/livestock/LS-S01c-960.webp 960w, assets/media/livestock/LS-S01c-1280.webp 1280w, assets/media/livestock/LS-S01c-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="1460" loading="lazy" decoding="async" alt="The dashboard: livestock count, colour distribution, profit trend and top cost per animal, all drawn from the SQLite data."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The dashboard: livestock count, colour distribution, profit trend and top cost per animal, all drawn from the SQLite data.</span></figcaption>
+</figure>
+        </div>
+        <div class="figs">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="ls" data-full="assets/media/livestock/LS-S02a-1920.webp" data-caption="Livestock count and the profit trend for every animal, drawn with Microcharts." data-alt="Livestock count and the profit trend for every animal, drawn with Microcharts." aria-label="Enlarge: Livestock count and the profit trend for every animal, drawn with Microcharts.">
+    <picture><img src="assets/media/livestock/LS-S02a-1280.webp" srcset="assets/media/livestock/LS-S02a-960.webp 960w, assets/media/livestock/LS-S02a-1280.webp 1280w, assets/media/livestock/LS-S02a-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="1920" height="1080" loading="lazy" decoding="async" alt="Livestock count and the profit trend for every animal, drawn with Microcharts."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Livestock count and the profit trend for every animal, drawn with Microcharts.</span></figcaption>
+</figure>
+        </div>
+        <h3>Records and live calculations</h3>
+        <div class="figs">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="ls" data-full="assets/media/livestock/LS-S04d-2560.webp" data-caption="The animals list with a record selected, ready to update or delete." data-alt="The animals list with a record selected, ready to update or delete." aria-label="Enlarge: The animals list with a record selected, ready to update or delete.">
+    <picture><img src="assets/media/livestock/LS-S04d-1280.webp" srcset="assets/media/livestock/LS-S04d-960.webp 960w, assets/media/livestock/LS-S04d-1280.webp 1280w, assets/media/livestock/LS-S04d-1920.webp 1920w, assets/media/livestock/LS-S04d-2560.webp 2560w" sizes="(max-width: 1040px) 100vw, 1000px" width="2560" height="1392" loading="lazy" decoding="async" alt="The animals list with a record selected, ready to update or delete."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The animals list with a record selected, ready to update or delete.</span></figcaption>
+</figure>
+        </div>
+        <div class="figs two">
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:860/848">
+    <noscript><a class="nojs" href="assets/media/livestock/LS-L02c_add-form-crop_h264_860x848p60.mp4"><img src="assets/media/livestock/LS-L02c_add-form-crop_poster_860.webp" width="860" height="848" alt="Typing a cow’s milk yield; the income and profit preview updates (opens the video)"></a></noscript>
+    <video data-mode="once" data-src="assets/media/livestock/LS-L02c_add-form-crop_h264_860x848p60.mp4" data-src-sm="assets/media/livestock/LS-L02c_add-form-crop_h264_640x632p60.mp4" data-poster="assets/media/livestock/LS-L02c_add-form-crop_poster_860.webp" width="860" height="848" preload="none" muted playsinline aria-label="Typing a cow’s milk yield; the income and profit preview updates"></video>
+  </div>
+  <figcaption><span>Adding a cow: as the milk yield is typed, income becomes $300.8 and profit $172.4.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="ls" data-full="assets/media/livestock/LS-S05c-1288.webp" data-caption="The finished form: income $300.8 and profit $172.4, worked out before Save." data-alt="The finished form: income $300.8 and profit $172.4, worked out before Save." aria-label="Enlarge: The finished form: income $300.8 and profit $172.4, worked out before Save.">
+    <picture><img src="assets/media/livestock/LS-S05c-1280.webp" srcset="assets/media/livestock/LS-S05c-960.webp 960w, assets/media/livestock/LS-S05c-1280.webp 1280w, assets/media/livestock/LS-S05c-1288.webp 1288w" sizes="(max-width: 1040px) 100vw, 1000px" width="1288" height="900" loading="lazy" decoding="async" alt="The finished form: income $300.8 and profit $172.4, worked out before Save."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The finished form: income $300.8 and profit $172.4, worked out before Save.</span></figcaption>
+</figure>
+        </div>
+        <h3>Questions about the farm</h3>
+        <div class="figs two">
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1044">
+    <noscript><a class="nojs" href="assets/media/livestock/LS-L01_query-sheep-white_h264_1920x1044p60.mp4"><img src="assets/media/livestock/LS-L01_query-sheep-white_poster_1920.webp" width="1920" height="1044" alt="Query: Sheep + White, Run Query filters 11 rows to 5 (opens the video)"></a></noscript>
+    <video data-mode="once" data-src="assets/media/livestock/LS-L01_query-sheep-white_h264_1920x1044p60.mp4" data-src-sm="assets/media/livestock/LS-L01_query-sheep-white_h264_1280x696p60.mp4" data-poster="assets/media/livestock/LS-L01_query-sheep-white_poster_1920.webp" width="1920" height="1044" preload="none" muted playsinline aria-label="Query: Sheep + White, Run Query filters 11 rows to 5"></video>
+  </div>
+  <figcaption><span>Query: sheep in white. Run Query filters 11 rows to 5.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="ls" data-full="assets/media/livestock/LS-S07c-1280.webp" data-caption="The query summary: 5 white sheep, 45% of all 11 animals, $243.5 profit." data-alt="The query summary: 5 white sheep, 45% of all 11 animals, $243.5 profit." aria-label="Enlarge: The query summary: 5 white sheep, 45% of all 11 animals, $243.5 profit.">
+    <picture><img src="assets/media/livestock/LS-S07c-1280.webp" srcset="assets/media/livestock/LS-S07c-960.webp 960w, assets/media/livestock/LS-S07c-1280.webp 1280w" sizes="(max-width: 1040px) 100vw, 1000px" width="1280" height="400" loading="lazy" decoding="async" alt="The query summary: 5 white sheep, 45% of all 11 animals, $243.5 profit."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The query summary: 5 white sheep, 45% of all 11 animals, $243.5 profit.</span></figcaption>
+</figure>
+        </div>
+        <div class="figs two">
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="ls" data-full="assets/media/livestock/LS-S08c-1280.webp" data-caption="Statistics for the whole farm, with the conclusion that cows are more profitable." data-alt="Statistics for the whole farm, with the conclusion that cows are more profitable." aria-label="Enlarge: Statistics for the whole farm, with the conclusion that cows are more profitable.">
+    <picture><img src="assets/media/livestock/LS-S08c-1280.webp" srcset="assets/media/livestock/LS-S08c-960.webp 960w, assets/media/livestock/LS-S08c-1280.webp 1280w" sizes="(max-width: 1040px) 100vw, 1000px" width="1280" height="470" loading="lazy" decoding="async" alt="Statistics for the whole farm, with the conclusion that cows are more profitable."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Statistics for the whole farm, with the conclusion that cows are more profitable.</span></figcaption>
+</figure>
+          <figure class="fig">
+  <button class="shot" type="button" data-zoom data-group="ls" data-full="assets/media/livestock/LS-S09-2002.webp" data-caption="Forecast: buying 10 more cows would bring an estimated $1495.4 a day." data-alt="Forecast: buying 10 more cows would bring an estimated $1495.4 a day." aria-label="Enlarge: Forecast: buying 10 more cows would bring an estimated $1495.4 a day.">
+    <picture><img src="assets/media/livestock/LS-S09-1280.webp" srcset="assets/media/livestock/LS-S09-960.webp 960w, assets/media/livestock/LS-S09-1280.webp 1280w, assets/media/livestock/LS-S09-1920.webp 1920w, assets/media/livestock/LS-S09-2002.webp 2002w" sizes="(max-width: 1040px) 100vw, 1000px" width="2002" height="440" loading="lazy" decoding="async" alt="Forecast: buying 10 more cows would bring an estimated $1495.4 a day."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Forecast: buying 10 more cows would bring an estimated $1495.4 a day.</span></figcaption>
+</figure>
+        </div>
+        <h3>The whole workflow</h3>
+        <div class="figs">
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1044">
+    <noscript><a class="nojs" href="assets/media/livestock/LS-V01_workflow_h264_1920x1044p60.mp4"><img src="assets/media/livestock/LS-V01_workflow_poster_1920.webp" width="1920" height="1044" alt="Livestock Management: adding a cow, then the analysis and dashboard update (opens the video)"></a></noscript>
+    <video data-mode="click" data-src="assets/media/livestock/LS-V01_workflow_h264_1920x1044p60.mp4" data-heavy data-poster="assets/media/livestock/LS-V01_workflow_poster_1920.webp" width="1920" height="1044" preload="none" muted playsinline aria-label="Livestock Management: adding a cow, then the analysis and dashboard update"></video>
+  </div>
+  <figcaption><span>Add a cow, save it, then explore the updated analysis, forecast and dashboard.</span><span class="tag">Application recording</span></figcaption>
+</figure>
+        </div>
+      </section>
+      <section class="chapter" id="engineering" aria-labelledby="h-engineering">
+        <p class="kicker"><span class="n">03</span> How it is built</p>
+        <h2 id="h-engineering">Layers over SQLite.</h2>
+        <div class="prose">
+          <ul>
+            <li>Models, repositories and services over a local SQLite database (sqlite-net), seeded from a bundled synthetic database on first run.</li>
+            <li>The Dashboard uses a dependency-injected view model (CommunityToolkit.Mvvm); the other pages use code-behind.</li>
+            <li>Queries and statistics use LINQ (filtering, sums, averages) in the services and the query and analysis pages.</li>
+            <li>Charts are drawn with Microcharts on SkiaSharp.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="chapter" id="testing" aria-labelledby="h-testing">
+        <p class="kicker"><span class="n">04</span> Calculations</p><h2 id="h-testing">From individual records to farm-wide totals.</h2>
+        <div class="prose"><p>The app applies the same rules across its forms, queries and charts. Daily income uses milk yield × 9.4 for cows or wool yield × 6.2 for sheep. Tax is 0.02 × weight; profit deducts expenses and tax from income.</p><p>The live preview makes those relationships visible before Save. Filters and forecasts then turn individual records into totals that can be compared across the farm.</p></div>
+      </section>
+      <section class="chapter" aria-label="Next project">
+        <a class="next w-echoes" href="project-echoes-of-valor.html"><span class="art w-echoes" aria-hidden="true"></span><span><span class="eyebrow">Next project</span><br><span class="t">Echoes of Valor · Godot</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Michael Chen · <a href="mailto:michael16585@outlook.com" data-email>michael16585@outlook.com</a></span>
+    <span>Software engineering · Michael Chen</span>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+
+</body>
 </html>
