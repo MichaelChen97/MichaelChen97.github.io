@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Echoes of Valor — Michael Chen</title>
+  <meta name="description" content="Echoes of Valor: a team Godot 4.4 pixel-art RPG. Michael Chen built the first-pass tile layouts and level scaffolding for Level 2 (Inner Forest) and Level 3 (Outer Temple).">
+  <meta name="theme-color" content="#07090c">
+  <link rel="canonical" href="https://michaelchen97.github.io/project-echoes-of-valor.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Michael Chen — Software Engineer">
+  <meta property="og:title" content="Echoes of Valor — Michael Chen">
+  <meta property="og:description" content="Echoes of Valor: a team Godot 4.4 pixel-art RPG. Michael Chen built the first-pass tile layouts and level scaffolding for Level 2 (Inner Forest) and Level 3 (Outer Temple).">
+  <meta property="og:url" content="https://michaelchen97.github.io/project-echoes-of-valor.html">
+  <meta property="og:image" content="https://michaelchen97.github.io/assets/og/og-project-echoes-of-valor.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Echoes of Valor — Michael Chen: preview image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://michaelchen97.github.io/assets/og/og-project-echoes-of-valor.jpg">
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/GeistPixel-Square.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" as="image" href="assets/media/echoes-of-valor/EV-F01_montage_poster_960.webp" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23eef2f6'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' text-anchor='middle' fill='%2307090c'%3EMC%3C/text%3E%3C/svg%3E">
+</head>
+
+<body class="w-echoes">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">MC</span><span>Michael Chen</span><span class="sr-only">, home</span></a>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="./#work" data-nav="work" aria-current="true">Work</a>
+      <a href="./#toolbox" data-nav="toolbox">Toolbox</a>
+      <a href="./#about" data-nav="about">About</a>
+      <a href="./#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-sm header-cta" href="https://canva.link/l92zh4dfmt63nav" target="_blank" rel="noopener noreferrer">Résumé<span class="sr-only"> (opens in a new tab)</span></a>
+      <button class="btn btn-sm nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="case-hero w-echoes">
+    <div class="art w-echoes" aria-hidden="true"></div>
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="./#echoes">Work</a><span aria-hidden="true">/</span><span>Echoes of Valor</span></nav>
+      <div class="ch-grid">
+        <div class="ch-copy">
+          <p class="tag">Godot 4.4 · team project</p>
+          <h1>Echoes of Valor</h1>
+          <p class="lede">A top-down pixel-art RPG made by a student team in Godot 4.4. I laid out the first versions of two of its levels: the Inner Forest and the Outer Temple.</p>
+          <p class="role"><b>My role</b><span>Original layouts for the Inner Forest and Outer Temple</span></p>
+        </div>
+        <div class="ch-media">
+          <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    
+    <video data-mode="click" data-src="assets/media/echoes-of-valor/EV-F01_montage_h264_1920x1080p60.mp4" data-src-sm="assets/media/echoes-of-valor/EV-F01_montage_h264_1280x720p60.mp4" data-heavy poster="assets/media/echoes-of-valor/EV-F01_montage_poster_960.webp" data-poster-lg="assets/media/echoes-of-valor/EV-F01_montage_poster_1920.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Echoes of Valor gameplay montage"></video>
+  </div>
+  <figcaption><span>Explore the Inner Forest and Outer Temple in this gameplay highlights reel.</span><span class="tag">Gameplay highlights</span></figcaption>
+</figure>
+        </div>
+        <dl class="facts">
+        <div><dt>Team</dt><dd>Systems, enemies, the boss and the UI by the team lead</dd></div>
+        <div><dt>Engine</dt><dd>Godot 4.4 · GDScript · tilemaps</dd></div>
+        <div><dt>When</dt><dd>2026</dd></div>
+      </dl>
+      </div>
+    </div>
+  </section>
+  <div class="wrap case-layout">
+    <nav class="toc" aria-label="On this page"><a href="#game">The game</a><a href="#built">What I built</a><a href="#gameplay">Gameplay</a><a href="#boss">Boss &amp; Android</a><a href="#credits">Credits &amp; rights</a></nav>
+    <div>
+      <section class="chapter" id="game" aria-labelledby="h-game">
+        <p class="kicker"><span class="n">01</span> The game</p>
+        <h2 id="h-game">From village to the Inner Sanctum.</h2>
+        <div class="prose">
+          <p>After a splash screen, the main menu and four story panels, the hero sets out from an intro village and plays through four levels in order: Level 1, the Outskirts; Level 2, the Inner Forest; Level 3, the Outer Temple; and Level 4, the Boss arena, which Level 3’s exit signposts as the Inner Sanctum. There he faces the Bringer of Death. Shrines are purified along the way, and each purified shrine gives a gem that doubles health and attack. Defeating the Boss leads to the good ending; any death leads to the bad ending. The game has four-direction movement, a dash with stamina, and combat with critical hits and knockback.</p>
+        </div>
+      </section>
+      <section class="chapter" id="built" aria-labelledby="h-built">
+        <p class="kicker"><span class="n">02</span> What I built</p>
+        <h2 id="h-built">Two levels’ worth of ground to walk on.</h2>
+        <div class="prose">
+          <ul>
+            <li><strong>Level 2, Inner Forest</strong>: the first-pass tile layout (the paths, stones and water layers) and the scaffolding for the shrine, portal, signpost and level transition. These layers survive unchanged in the final game.</li>
+            <li><strong>Level 3, Outer Temple</strong>: the first-pass tile layout (grass, water, paths and stones), also unchanged in the final game.</li>
+            <li>An early Level 1 prototype, later replaced by the team, and a merge-conflict fix.</li>
+          </ul>
+          <p>The team lead populated the levels and built the systems: enemies, the Boss and its arena, combat, dialogue, the story and menus, the HUD and touch controls, the settings and the Android export.</p>
+        </div>
+      </section>
+      <section class="chapter feature" id="gameplay" aria-labelledby="h-gameplay">
+        <p class="kicker"><span class="n">03</span> Gameplay</p>
+        <h2 id="h-gameplay">In the engine.</h2>
+        <div class="prose"><p>Gameplay from the team project. My work focused on the Level 2 and Level 3 layouts; the team built the combat, enemies and game systems.</p></div>
+<div class="figs">
+  <figure class="fig pixel">
+  <button class="shot" type="button" data-zoom data-pixel data-group="ev" data-full="assets/media/echoes-of-valor/EV-S13-3840.webp" data-caption="Level 2, the Inner Forest: the path, stepping-stone and water layers are my first-pass layout, unchanged in the final game." data-alt="Level 2, the Inner Forest: the path, stepping-stone and water layers are my first-pass layout, unchanged in the final game." aria-label="Enlarge: Level 2, the Inner Forest: the path, stepping-stone and water layers are my first-pass layout, unchanged in the final game.">
+    <picture><img src="assets/media/echoes-of-valor/EV-S13-1280.webp" srcset="assets/media/echoes-of-valor/EV-S13-384.webp 384w, assets/media/echoes-of-valor/EV-S13-960.webp 960w, assets/media/echoes-of-valor/EV-S13-1280.webp 1280w, assets/media/echoes-of-valor/EV-S13-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="Level 2, the Inner Forest: the path, stepping-stone and water layers are my first-pass layout, unchanged in the final game."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Level 2, the Inner Forest: the path, stepping-stone and water layers are my first-pass layout, unchanged in the final game.</span></figcaption>
+</figure>
+</div>
+<div class="figs two">
+  <figure class="fig pixel">
+  <button class="shot" type="button" data-zoom data-pixel data-group="ev" data-full="assets/media/echoes-of-valor/EV-S02-crop-1920.webp" data-caption="Combat on my Level 2 layout: a sword hit on a Plant while a second Plant is alerted. Combat and enemies: the team lead’s." data-alt="Combat on my Level 2 layout: a sword hit on a Plant while a second Plant is alerted. Combat and enemies: the team lead’s." aria-label="Enlarge: Combat on my Level 2 layout: a sword hit on a Plant while a second Plant is alerted. Combat and enemies: the team lead’s.">
+    <picture><img src="assets/media/echoes-of-valor/EV-S02-crop-1920.webp" srcset="assets/media/echoes-of-valor/EV-S02-crop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="1920" height="1080" loading="lazy" decoding="async" alt="Combat on my Level 2 layout: a sword hit on a Plant while a second Plant is alerted. Combat and enemies: the team lead’s."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Combat on my Level 2 layout: a sword hit on a Plant while a second Plant is alerted. Combat and enemies: the team lead’s.</span></figcaption>
+</figure>
+  <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/echoes-of-valor/EV-L01t_level2-plant-fight-trim_h264_1920x1080p60.mp4"><img src="assets/media/echoes-of-valor/EV-L01t_level2-plant-fight-trim_poster_960.webp" width="1920" height="1080" alt="Level 2 combat: dodge, a series of hits, Plant defeated (opens the video)"></a></noscript>
+    <video data-mode="once" data-src="assets/media/echoes-of-valor/EV-L01t_level2-plant-fight-trim_h264_1920x1080p60.mp4" data-src-sm="assets/media/echoes-of-valor/EV-L01t_level2-plant-fight-trim_h264_960x540p60.mp4" data-poster="assets/media/echoes-of-valor/EV-L01t_level2-plant-fight-trim_poster_1920.webp" data-poster-sm="assets/media/echoes-of-valor/EV-L01t_level2-plant-fight-trim_poster_960.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Level 2 combat: dodge, a series of hits, Plant defeated"></video>
+  </div>
+  <figcaption><span>A dash-dodge, a series of hits and a Plant defeated. Combat, enemies, dash and HUD: the team lead’s.</span><span class="tag">Gameplay from the team project</span></figcaption>
+</figure>
+</div>
+<div class="figs">
+  <figure class="fig pixel">
+  <button class="shot" type="button" data-zoom data-pixel data-group="ev" data-full="assets/media/echoes-of-valor/EV-S14-3840.webp" data-caption="Level 3, the Outer Temple: the grass and path layers are part of my first-pass layout; the walls and stairs are the team’s." data-alt="Level 3, the Outer Temple: the grass and path layers are part of my first-pass layout; the walls and stairs are the team’s." aria-label="Enlarge: Level 3, the Outer Temple: the grass and path layers are part of my first-pass layout; the walls and stairs are the team’s.">
+    <picture><img src="assets/media/echoes-of-valor/EV-S14-1280.webp" srcset="assets/media/echoes-of-valor/EV-S14-384.webp 384w, assets/media/echoes-of-valor/EV-S14-960.webp 960w, assets/media/echoes-of-valor/EV-S14-1280.webp 1280w, assets/media/echoes-of-valor/EV-S14-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="Level 3, the Outer Temple: the grass and path layers are part of my first-pass layout; the walls and stairs are the team’s."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Level 3, the Outer Temple: the grass and path layers are part of my first-pass layout; the walls and stairs are the team’s.</span></figcaption>
+</figure>
+</div>
+<div class="figs two">
+  <figure class="fig pixel">
+  <button class="shot" type="button" data-zoom data-pixel data-group="ev" data-full="assets/media/echoes-of-valor/EV-S06-crop-1920.webp" data-caption="Dashing out of an Orc’s attack in Level 3. Dash, combat and the Orc’s behaviour: the team lead’s." data-alt="Dashing out of an Orc’s attack in Level 3. Dash, combat and the Orc’s behaviour: the team lead’s." aria-label="Enlarge: Dashing out of an Orc’s attack in Level 3. Dash, combat and the Orc’s behaviour: the team lead’s.">
+    <picture><img src="assets/media/echoes-of-valor/EV-S06-crop-1920.webp" srcset="assets/media/echoes-of-valor/EV-S06-crop-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="1920" height="1080" loading="lazy" decoding="async" alt="Dashing out of an Orc’s attack in Level 3. Dash, combat and the Orc’s behaviour: the team lead’s."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>Dashing out of an Orc’s attack in Level 3. Dash, combat and the Orc’s behaviour: the team lead’s.</span></figcaption>
+</figure>
+  <figure class="fig fig-video">
+  <div class="frame" style="--ar:1920/1080">
+    <noscript><a class="nojs" href="assets/media/echoes-of-valor/EV-L03_level3-orc-dash_h264_1920x1080p60.mp4"><img src="assets/media/echoes-of-valor/EV-L03_level3-orc-dash_poster_960.webp" width="1920" height="1080" alt="Level 3: dash-dodges and sword hits on an Orc (opens the video)"></a></noscript>
+    <video data-mode="once" data-src="assets/media/echoes-of-valor/EV-L03_level3-orc-dash_h264_1920x1080p60.mp4" data-src-sm="assets/media/echoes-of-valor/EV-L03_level3-orc-dash_h264_960x540p60.mp4" data-poster="assets/media/echoes-of-valor/EV-L03_level3-orc-dash_poster_1920.webp" data-poster-sm="assets/media/echoes-of-valor/EV-L03_level3-orc-dash_poster_960.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Level 3: dash-dodges and sword hits on an Orc"></video>
+  </div>
+  <figcaption><span>Dash-dodges and hits on an Orc in Level 3. Combat and enemies: the team lead’s.</span><span class="tag">Gameplay from the team project</span></figcaption>
+</figure>
+</div>
+      </section>
+      <section class="chapter feature" id="boss" aria-labelledby="h-boss">
+        <p class="kicker"><span class="n">04</span> Boss &amp; Android</p>
+        <h2 id="h-boss">The final battle.</h2>
+        <div class="prose"><p>The team built the Boss, arena, endings and touch controls. The footage follows a complete new-game run into the final battle. The Android clip shows an emulator demonstration from a test export.</p></div>
+<div class="figs">
+  <figure class="fig fig-video"><div class="frame" style="--ar:16/9">
+    <noscript><a class="nojs" href="assets/media/echoes-of-valor/EV-B02_boss-fight-continuous_h264_1920x1080p60.mp4"><img src="assets/media/echoes-of-valor/EV-B01_boss-fight-continuous_poster_1280.webp" width="1920" height="1080" alt="The whole Boss fight, continuous excerpt (opens the video)"></a></noscript>
+    <video data-mode="click" data-src="assets/media/echoes-of-valor/EV-B02_boss-fight-continuous_h264_1920x1080p60.mp4" data-src-sm="assets/media/echoes-of-valor/EV-B01_boss-fight-continuous_h264_1280x720p60.mp4" data-poster="assets/media/echoes-of-valor/EV-B01_boss-fight-continuous_poster_1920.webp" data-poster-sm="assets/media/echoes-of-valor/EV-B01_boss-fight-continuous_poster_1280.webp" width="1920" height="1080" preload="none" muted playsinline aria-label="Level 4, the Inner Sanctum: the whole Boss fight, to the good ending"></video>
+  </div><figcaption><span>Level 4, the Inner Sanctum: the whole Boss fight, from Level 3’s exit to the good ending (78 s). Boss, arena, HUD and endings: the team lead’s.</span><span class="tag">Gameplay from the team project</span></figcaption></figure>
+</div>
+<div class="figs two">
+  <figure class="fig pixel">
+  <button class="shot" type="button" data-zoom data-pixel data-group="ev" data-full="assets/media/echoes-of-valor/EV-S32-3840.webp" data-caption="The good ending: the first Epilogue panel, after the Boss is defeated. Story and ending panels: the team’s." data-alt="The good ending: the first Epilogue panel, after the Boss is defeated. Story and ending panels: the team’s." aria-label="Enlarge: The good ending: the first Epilogue panel, after the Boss is defeated. Story and ending panels: the team’s.">
+    <picture><img src="assets/media/echoes-of-valor/EV-S32-1280.webp" srcset="assets/media/echoes-of-valor/EV-S32-384.webp 384w, assets/media/echoes-of-valor/EV-S32-1280.webp 1280w, assets/media/echoes-of-valor/EV-S32-1920.webp 1920w" sizes="(max-width: 1040px) 100vw, 1000px" width="3840" height="2160" loading="lazy" decoding="async" alt="The good ending: the first Epilogue panel, after the Boss is defeated. Story and ending panels: the team’s."></picture>
+    <span class="zoom-hint" aria-hidden="true">Enlarge ⤢</span>
+  </button>
+  <figcaption><span>The good ending: the first Epilogue panel, after the Boss is defeated. Story and ending panels: the team’s.</span></figcaption>
+</figure>
+  <figure class="fig fig-video">
+  <div class="frame" style="--ar:1872/864">
+    <noscript><a class="nojs" href="assets/media/echoes-of-valor/EV-A12_level1-arrival-touch-controls_h264_1872x864p60.mp4"><img src="assets/media/echoes-of-valor/EV-A12_level1-arrival-touch-controls_poster_1872.webp" width="1872" height="864" alt="Android emulator: controls appear, then move, attack and dash (opens the video)"></a></noscript>
+    <video data-mode="once" data-src="assets/media/echoes-of-valor/EV-A12_level1-arrival-touch-controls_h264_1872x864p60.mp4" data-src-sm="assets/media/echoes-of-valor/EV-A12_level1-arrival-touch-controls_h264_1248x576p60.mp4" data-poster="assets/media/echoes-of-valor/EV-A12_level1-arrival-touch-controls_poster_1872.webp" width="1872" height="864" preload="none" muted playsinline aria-label="Android emulator: controls appear, then move, attack and dash"></video>
+  </div>
+  <figcaption><span>Android emulator: controls appear, then move, attack and dash. Touch controls and Android export: the team lead’s.</span><span class="tag">Android emulator demonstration</span></figcaption>
+</figure>
+</div>
+      </section>
+      <section class="chapter" id="credits" aria-labelledby="h-credits">
+        <p class="kicker"><span class="n">05</span> Credits &amp; rights</p>
+        <h2 id="h-credits">Built together.</h2>
+        <div class="prose">
+          <p>Echoes of Valor is a team project, shown here with the team’s agreement. The game uses third-party tilesets and character art. The footage is silent, so none of the game’s music is used.</p>
+        </div>
+      </section>
+      <section class="chapter" aria-label="Next project">
+        <a class="next w-serenity" href="project-serenity-trail.html"><span class="art w-serenity" aria-hidden="true"></span><span><span class="eyebrow">Next project</span><br><span class="t">Serenity Trail</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Michael Chen · <a href="mailto:michael16585@outlook.com" data-email>michael16585@outlook.com</a></span>
+    <span>Software engineering · Michael Chen</span>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+
+</body>
+</html>
